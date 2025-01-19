@@ -1,0 +1,11 @@
+[project]
+name = "pixel-count-microservice"
+version = "0.1.0"
+description = "django microservice to return pixel count of images in a given url"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "django>=5.1.5",
+    "pillow>=11.1.0",
+    "requests>=2.32.3",
+]

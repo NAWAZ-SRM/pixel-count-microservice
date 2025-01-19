@@ -1,6 +1,7 @@
 # pixel-count-microservice
-clone it 
-cd pixel_counter
-python manage.py run server
-url to open the result is "http://127.0.0.1:8000/image/pixel-count/"
-cd INTO image_processor/urls.py and change the directory of the image according to ur machine
+
+1. clone it
+2. cd pixel-count-microservice
+3. python manage.py runserver
+4. url to open the result is "http://127.0.0.1:8000/image/pixel-count/"
+5. make a request using url parameter , i.e /image/pixel-count/?url=xyz
