@@ -14,6 +14,7 @@ from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+STATICFILES_DIRS = [BASE_DIR / "static"]
 
 
 # Quick-start development settings - unsuitable for production
@@ -80,6 +81,9 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+SESSION_COOKIE_AGE = 15  # Session expires in .5 minutes
+SESSION_ENGINE = "django.contrib.sessions.backends.db"  # Default backend
 
 
 # Password validation
