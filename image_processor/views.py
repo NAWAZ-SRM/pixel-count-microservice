@@ -21,7 +21,7 @@ IMAGE_DIR = os.path.join("static", "images")
 
 @login_required
 def list_images(request):
-    images = [f for f in os.listdir(IMAGE_DIR) if f.endswith(('.tiff', '.png'))]
+    images = [f for f in os.listdir(IMAGE_DIR) if f.endswith(('.tiff', '.ndpi'))]
     return JsonResponse({"images": images})
 
 

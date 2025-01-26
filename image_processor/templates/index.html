@@ -36,15 +36,22 @@
           if (data.images && data.images.length > 0) {
             data.images.forEach((image) => {
               const listItem = document.createElement('li');
-              const img = document.createElement('img');
-              img.src = image;
-              img.alt = image;
-              img.style.maxWidth = '200px'; // Limit image size
-              img.style.cursor = 'pointer'; // Indicate clickable
-
-              listItem.appendChild(img);
+              listItem.textContent = image;
+              listItem.style.cursor = 'pointer';
+              // Highlight .ndpi files differently
+              if (image.toLowerCase().endsWith('.ndpi')) {
+                listItem.style.color = 'green';
+                listItem.style.fontWeight = 'bold';
+              }
               listItem.onclick = async () => {
                 try {
+                  // Check if image is .ndpi
+                  if (image.toLowerCase().endsWith('.ndpi')) {
+                    window.location.href = `/api/open-slide`;
+                    return;
+                  }
+
+                  // Regular image storage
                   const storeResponse = await fetch('/api/store-image/', {
                     method: 'POST',
                     headers: {
@@ -52,7 +59,6 @@
                     },
                     body: `image=${encodeURIComponent(image)}`,
                   });
-
                   if (storeResponse.ok) {
                     fetchSelectedImage();
                   }
@@ -60,7 +66,6 @@
                   console.error('Error storing image:', storeError);
                 }
               };
-
               imageList.appendChild(listItem);
             });
           } else {
