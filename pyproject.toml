@@ -1,11 +1,14 @@
 [project]
 name = "pixel-count-microservice"
 version = "0.1.0"
-description = "django microservice to return pixel count of images in a given url"
+description = "django microservice to list images in directory and render using open-slide"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "django>=5.1.5",
+    "django-extensions>=3.2.3",
+    "openslide-bin>=4.0.0.6",
+    "openslide-python>=1.4.1",
     "pillow>=11.1.0",
     "requests>=2.32.3",
 ]

@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'image_processor',
-     'django_extensions',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
@@ -83,7 +83,7 @@ DATABASES = {
     }
 }
 
-SESSION_COOKIE_AGE = 15  # Session expires in .5 minutes
+SESSION_COOKIE_AGE = 300  # Session expires in 5 minutes
 SESSION_ENGINE = "django.contrib.sessions.backends.db"  # Default backend
 
 
