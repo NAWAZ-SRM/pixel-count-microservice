@@ -4,3 +4,6 @@
 # Ignore the uv.lock file
 uv.lock
 .venv/
+
+openslide-python
+static/images/
