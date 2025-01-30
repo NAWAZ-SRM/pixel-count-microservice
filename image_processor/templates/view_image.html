@@ -1,30 +1,62 @@
+<!-- view_image.html -->
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenSlide Viewer</title>
-</head>
-<body>
-    <h1>OpenSlide Viewer</h1>
-    <div>
-        <img id="openslide-image" src="" alt="OpenSlide Image" />
-    </div>
+<html>
+  <head>
+    <title>Slide Viewer {{ image_name }}</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.0.0/openseadragon.min.js"></script>
+    <style>
+      #openseadragon-viewer {
+        width: 100%;
+        height: 800px;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="openseadragon-viewer"></div>
 
     <script>
-        // Fetch the OpenSlide image from the API and display it
-        fetch("/api/open-slide/")
-            .then(response => response.json())
-            .then(data => {
-                if (data.message === "Image served successfully") {
-                    document.getElementById("openslide-image").src = "/api/open-slide/";
-                } else {
-                    alert("Failed to load image.");
-                }
-            })
-            .catch(error => {
-                console.error("Error fetching image:", error);
-            });
+      document.addEventListener('DOMContentLoaded', function () {
+        const tileSource = {
+          width: {{ width }}, // placeholder width
+          height: {{ height }}, // placeholder height
+          tileSize: 512,
+          minLevel: 0,
+          maxLevel: Math.floor(Math.log2(Math.max({{ width }}, {{ height }}) / 512)),
+          getTileUrl: function (level, x, y) {
+            return `/api/open-slide/${level}/${y}/${x}/`;
+          },
+        };
+
+        const viewer = OpenSeadragon({
+          id: 'openseadragon-viewer',
+          prefixUrl:
+            'https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.0.0/images/',
+          tileSources: tileSource,
+          showNavigator: true,
+          showZoomControl: true,
+          showFullPageControl: true,
+          debugMode: true, // Enable debug logging
+          animationTime: 0.0,
+          blendTime: 0.0,
+          immediateRender: true,
+        });
+
+        // Debug handlers
+        viewer.addHandler('tile-load-failed', function (event) {
+          console.error('Tile load failed:', event);
+        });
+
+        viewer.addHandler('tile-loaded', function (event) {
+          console.log('Tile loaded:', event);
+        });
+
+        viewer.addHandler('open-failed', function (event) {
+          console.error('Open failed:', event);
+        });
+
+        console.log('Viewer initialized with tileSource:', tileSource);
+      });
     </script>
-</body>
+  </body>
 </html>

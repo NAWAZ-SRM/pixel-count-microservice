@@ -83,7 +83,7 @@ DATABASES = {
     }
 }
 
-SESSION_COOKIE_AGE = 300  # Session expires in 5 minutes
+SESSION_COOKIE_AGE = 800  # Session expires in 5 minutes
 SESSION_ENGINE = "django.contrib.sessions.backends.db"  # Default backend
 
 

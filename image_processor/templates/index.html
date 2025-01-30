@@ -38,16 +38,18 @@
               const listItem = document.createElement('li');
               listItem.textContent = image;
               listItem.style.cursor = 'pointer';
+
               // Highlight .ndpi files differently
               if (image.toLowerCase().endsWith('.ndpi')) {
                 listItem.style.color = 'green';
                 listItem.style.fontWeight = 'bold';
               }
+
               listItem.onclick = async () => {
                 try {
-                  // Check if image is .ndpi
+                  // Redirect to OpenSeadragon viewer for .ndpi images
                   if (image.toLowerCase().endsWith('.ndpi')) {
-                    window.location.href = `/api/open-slide`;
+                    window.location.href = `/api/view_image/`;
                     return;
                   }
 
@@ -59,6 +61,7 @@
                     },
                     body: `image=${encodeURIComponent(image)}`,
                   });
+
                   if (storeResponse.ok) {
                     fetchSelectedImage();
                   }
@@ -66,6 +69,7 @@
                   console.error('Error storing image:', storeError);
                 }
               };
+
               imageList.appendChild(listItem);
             });
           } else {

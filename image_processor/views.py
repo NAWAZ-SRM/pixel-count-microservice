@@ -1,20 +1,17 @@
-from django.http import JsonResponse
-
-# import requests
 from io import BytesIO
 import os
 import openslide
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.decorators import login_required
-from django.http import HttpResponseNotFound
+from django.http import JsonResponse
 from django.shortcuts import render, redirect
 from django.contrib.auth import login, logout
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib import messages
-
-# from django.utils import timezone
-# from django.conf import settings
 from django.http import HttpResponse
+
+from .openslide_helper import get_tile, initiate_tile
+
 
 IMAGE_DIR = os.path.join("static", "images")
 
@@ -116,37 +113,59 @@ def register_view(request):
     return render(request, "register.html", {"form": form})
 
 
+# @login_required(login_url='/api/404/')
+# def open_slide(request):
+#     if not request.user.is_authenticated:
+#         # If the user is not logged in, render the custom 404 page
+#         return redirect('custom_404')
+#     image_name = "test.ndpi"
+#     image_path = os.path.join(IMAGE_DIR, image_name)
+#     print(image_path)
+#     if not os.path.exists(image_path):
+#         return HttpResponse("Image not found.", status=404)
+
+#     slide = openslide.OpenSlide(image_path)
+
+#     width, height = slide.dimensions
+#     print(f"Image dimensions: {width} x {height}")
+
+#     #  a x*x pixel region from the top-left corner
+#     region_width = 6000
+#     region_height = 6000
+
+#     # Adjust region size to avoid reading beyond the image boundaries
+#     region_width = min(region_width, width)
+#     region_height = min(region_height, height)
+
+#     # Read a small region
+#     region = slide.read_region((0, 0), 0, (region_width, region_height))
+
+#     # conversion to image object
+#     image_io = BytesIO()
+#     region.save(image_io, format='PNG')
+#     image_io.seek(0)
+
+#     response = HttpResponse(image_io, content_type='image/png')
+#     return response
+
+
 @login_required(login_url='/api/404/')
-def open_slide(request):
+def open_slide(request, level=0, row=0, col=0):
+    """Fetches and returns a tile from an OpenSlide image."""
     if not request.user.is_authenticated:
-        # If the user is not logged in, render the custom 404 page
         return redirect('custom_404')
-    image_name = "test.ndpi"
-    image_path = os.path.join(IMAGE_DIR, image_name)
-    print(image_path)
-    if not os.path.exists(image_path):
-        return HttpResponse("Image not found.", status=404)
 
-    slide = openslide.OpenSlide(image_path)
+    image_name = "test.ndpi"  # Change this dynamically if needed
+    return get_tile(image_name, level, row, col)
 
-    width, height = slide.dimensions
-    print(f"Image dimensions: {width} x {height}")
 
-    #  a x*x pixel region from the top-left corner
-    region_width = 6000
-    region_height = 6000
-
-    # Adjust region size to avoid reading beyond the image boundaries
-    region_width = min(region_width, width)
-    region_height = min(region_height, height)
-
-    # Read a small region
-    region = slide.read_region((0, 0), 0, (region_width, region_height))
-
-    # conversion to image object
-    image_io = BytesIO()
-    region.save(image_io, format='PNG')
-    image_io.seek(0)
-
-    response = HttpResponse(image_io, content_type='image/png')
-    return response
+@login_required(login_url='/api/404/')
+def view_image(request):
+    """Render the OpenSeadragon viewer page."""
+    image_name = request.GET.get("image", "test.ndpi")  # Default to test.ndpi
+    _, width, height = initiate_tile(image_name)
+    return render(
+        request,
+        "view_image.html",
+        {"image_name": image_name, "width": width, "height": height},
+    )

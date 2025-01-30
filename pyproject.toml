@@ -7,6 +7,7 @@ requires-python = ">=3.13"
 dependencies = [
     "django>=5.1.5",
     "django-extensions>=3.2.3",
+    "numpy>=2.2.2",
     "openslide-bin>=4.0.0.6",
     "openslide-python>=1.4.1",
     "pillow>=11.1.0",

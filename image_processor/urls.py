@@ -9,6 +9,7 @@ from .views import (
     logout_view,
     register_view,
     open_slide,
+    view_image,
     custom_404,
 )
 
@@ -21,6 +22,8 @@ urlpatterns = [
     path("login/", login_view, name="login"),
     path("logout/", logout_view, name="logout"),
     path("register/", register_view, name="register"),
-    path("open-slide/", open_slide, name="open_slide"),
+    # path("open-slide/", open_slide, name="open_slide"),
+    path('open-slide/<int:level>/<int:row>/<int:col>/', open_slide, name='open_slide'),
+    path("view_image/", view_image, name="view_image"),
     path("404/", custom_404, name="404"),
 ]
