@@ -6,4 +6,4 @@ uv.lock
 .venv/
 
 openslide-python
-static/images/
+static/images/test.ndpi
