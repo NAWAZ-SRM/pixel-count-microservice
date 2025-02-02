@@ -1,104 +1,4 @@
-
-    <!-- view_image.html -->
-    <!-- <!DOCTYPE html>
-    <html>
-      <head>
-        <title>Slide Viewer {{ image_name }}</title>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.0.0/openseadragon.min.js"></script>
-        <style>
-          #openseadragon-viewer {
-            width: 100%;
-            height: 800px;
-            background-color: black;
-          }
-        </style>
-      </head>
-      <body>
-        <div id="openseadragon-viewer"></div>
-
-        <script>
-          document.addEventListener('DOMContentLoaded', function () {
-            // TileSource for the NDPI image
-            const tileSource = {
-              width: {{ width }}, // placeholder width
-              height: {{ height }}, // placeholder height
-              tileSize: 512,
-              minLevel: 0,
-              maxLevel: Math.floor(Math.log2(Math.max({{ width }}, {{ height }}) / 512)),
-              getTileUrl: function (level, x, y) {
-                return `/api/open-slide/${level}/${y}/${x}/`;
-              },
-            };
-
-            const viewer = OpenSeadragon({
-              id: 'openseadragon-viewer',
-              prefixUrl:
-                'https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.0.0/images/',
-              tileSources: tileSource,
-              showNavigator: true,
-              showZoomControl: true,
-              showFullPageControl: true,
-              debugMode: true, // Enable debug logging
-              animationTime: 0.0,
-              blendTime: 0.0,
-              immediateRender: true,
-            });
-
-            // Fetch annotations from the Django API
-            fetch('/api/annotations/')
-              .then(response => response.json())
-              .then(data => {
-                // Loop through each annotation and add it to the viewer
-                data.annotations.forEach(annotation => {
-                  viewer.addOverlay({
-                    element: createAnnotationElement(annotation),
-                    location: viewer.viewport.imageToViewportRectangle(
-                      new OpenSeadragon.Rect(
-                        annotation.x,
-                        annotation.y,
-                        annotation.width,
-                        annotation.height
-                      )
-                    )
-                  });
-                });
-              })
-              .catch(error => console.error('Error loading annotations:', error));
-
-            // Function to create a div element for each annotation (rectangle)
-            function createAnnotationElement(annotation) {
-              var div = document.createElement('div');
-              div.style.position = 'absolute';
-              div.style.border = '2px solid';
-              div.style.borderColor = annotation.color;
-              div.style.width = annotation.width + 'px';
-              div.style.height = annotation.height + 'px';
-              div.style.opacity = 0.5;
-              div.style.pointerEvents = 'none'; // Prevent interaction with the annotation
-              return div;
-            }
-
-            // Debug handlers for OpenSeadragon
-            viewer.addHandler('tile-load-failed', function (event) {
-              console.error('Tile load failed:', event);
-            });
-
-            viewer.addHandler('tile-loaded', function (event) {
-              console.log('Tile loaded:', event);
-            });
-
-            viewer.addHandler('open-failed', function (event) {
-              console.error('Open failed:', event);
-            });
-
-            console.log('Viewer initialized with tileSource:', tileSource);
-          });
-        </script>
-      </body>
-    </html> -->
-
-
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <title>Slide Viewer {{ image_name }}</title>
@@ -127,21 +27,24 @@
     <div id="openseadragon-viewer"></div>
 
     <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        // Create the tileSource object for the NDPI image.
-        const tileSource = {
-          width: {{ width }}, // placeholder width
-          height: {{ height }}, // placeholder height
-          tileSize: 512,
-          minLevel: 0,
-          maxLevel: Math.floor(Math.log2(Math.max({{ width }}, {{ height }}) / 512)),
-          getTileUrl: function (level, x, y) {
-            return `/api/open-slide/${level}/${y}/${x}/`;
-          },
-        };
+            document.addEventListener('DOMContentLoaded', function () {
+              // Create the tileSource object for the NDPI image.
+              const tileSource = {
+                width: {{ width }}, // placeholder width
+                height: {{ height }}, // placeholder height
+                tileSize: 512,
+                minLevel: 0,
+                maxLevel: Math.floor(Math.log2(Math.max({{ width }}, {{ height }}) / 512)),
+                getTileUrl: function (level, x, y) {
+                  return `/api/open-slide/${level}/${y}/${x}/`;
+                },
+              };
 
-        // Initialize the OpenSeadragon viewer.
-        const viewer = OpenSeadragon({
+              // Initialize the OpenSeadragon viewer.
+              if (window.viewer) {
+        console.warn('Viewer already exists. Skipping initialization.');
+      } else {
+        window.viewer = OpenSeadragon({
           id: 'openseadragon-viewer',
           prefixUrl: 'https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.0.0/images/',
           tileSources: tileSource,
@@ -153,75 +56,77 @@
           blendTime: 0.0,
           immediateRender: true,
         });
+      }
 
-        // Function to create a div element for an annotation overlay.
-        function createAnnotationElement(annotation) {
-          const div = document.createElement('div');
-          div.style.position = 'absolute';
-          div.style.border = '2px solid';
-          div.style.borderColor = annotation.color;
-          // Width and height are in image pixel coordinates
-          div.style.width = annotation.width + 'px';
-          div.style.height = annotation.height + 'px';
-          div.style.opacity = 0.5;
-          div.style.pointerEvents = 'none';
-          return div;
-        }
 
-        // Remove any existing overlays from the viewer.
-        function clearOverlays() {
-          viewer.clearOverlays();
-        }
+              // Function to create a div element for an annotation overlay.
+              function createAnnotationElement(annotation) {
+                const div = document.createElement('div');
+                div.style.position = 'absolute';
+                div.style.border = '2px solid';
+                div.style.borderColor = annotation.color;
+                // Width and height are in image pixel coordinates
+                div.style.width = annotation.width + 'px';
+                div.style.height = annotation.height + 'px';
+                div.style.opacity = 0.5;
+                div.style.pointerEvents = 'none';
+                return div;
+              }
 
-        // Fetch annotations from the specified endpoint and add them as overlays.
-        function updateAnnotations(apiEndpoint) {
-          clearOverlays();
-          fetch(apiEndpoint)
-            .then(response => response.json())
-            .then(data => {
-              data.annotations.forEach(annotation => {
-                // Convert image pixel coordinates to viewport coordinates.
-                const rect = viewer.viewport.imageToViewportRectangle(
-                  new OpenSeadragon.Rect(
-                    annotation.x,
-                    annotation.y,
-                    annotation.width,
-                    annotation.height
-                  )
-                );
-                viewer.addOverlay({
-                  element: createAnnotationElement(annotation),
-                  location: rect,
-                });
+              // Remove any existing overlays from the viewer.
+              function clearOverlays() {
+                viewer.clearOverlays();
+              }
+
+              // Fetch annotations from the specified endpoint and add them as overlays.
+              function updateAnnotations(apiEndpoint) {
+                clearOverlays();
+                fetch(apiEndpoint)
+                  .then(response => response.json())
+                  .then(data => {
+                    data.annotations.forEach(annotation => {
+                      // Convert image pixel coordinates to viewport coordinates.
+                      const rect = viewer.viewport.imageToViewportRectangle(
+                        new OpenSeadragon.Rect(
+                          annotation.x,
+                          annotation.y,
+                          annotation.width,
+                          annotation.height
+                        )
+                      );
+                      viewer.addOverlay({
+                        element: createAnnotationElement(annotation),
+                        location: rect,
+                      });
+                    });
+                  })
+                  .catch(error => console.error('Error loading annotations:', error));
+              }
+
+              // Set up button event listeners.
+              document.getElementById('btn-json').addEventListener('click', function () {
+                updateAnnotations('/api/annotations/');  // Your existing JSON endpoint.
               });
-            })
-            .catch(error => console.error('Error loading annotations:', error));
-        }
 
-        // Set up button event listeners.
-        document.getElementById('btn-json').addEventListener('click', function () {
-          updateAnnotations('/api/annotations/');  // Your existing JSON endpoint.
-        });
+              document.getElementById('btn-xml').addEventListener('click', function () {
+                updateAnnotations('/api/annotations-xml/');  // The new XML logic endpoint.
+              });
 
-        document.getElementById('btn-xml').addEventListener('click', function () {
-          updateAnnotations('/api/annotations-xml/');  // The new XML logic endpoint.
-        });
+              // Optionally, load one set of annotations by default.
+              updateAnnotations('/api/annotations/');
 
-        // Optionally, load one set of annotations by default.
-        updateAnnotations('/api/annotations/');
-
-        // Debug handlers for OpenSeadragon.
-        viewer.addHandler('tile-load-failed', function (event) {
-          console.error('Tile load failed:', event);
-        });
-        viewer.addHandler('tile-loaded', function (event) {
-          console.log('Tile loaded:', event);
-        });
-        viewer.addHandler('open-failed', function (event) {
-          console.error('Open failed:', event);
-        });
-        console.log('Viewer initialized with tileSource:', tileSource);
-      });
+              // Debug handlers for OpenSeadragon.
+              viewer.addHandler('tile-load-failed', function (event) {
+                console.error('Tile load failed:', event);
+              });
+              viewer.addHandler('tile-loaded', function (event) {
+                console.log('Tile loaded:', event);
+              });
+              viewer.addHandler('open-failed', function (event) {
+                console.error('Open failed:', event);
+              });
+              console.log('Viewer initialized with tileSource:', tileSource);
+            });
     </script>
   </body>
 </html>
