@@ -1,5 +1,6 @@
 from io import BytesIO
 import os
+import numpy as np
 import openslide
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.decorators import login_required
@@ -9,9 +10,13 @@ from django.contrib.auth import login, logout
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib import messages
 from django.http import HttpResponse
-
+from PIL import Image
+from django.views.decorators.csrf import csrf_exempt
 from .openslide_helper import get_tile, initiate_tile
-
+import json
+from django.http import JsonResponse
+from django.conf import settings
+import xml.etree.ElementTree as ET
 
 IMAGE_DIR = os.path.join("static", "images")
 
@@ -169,3 +174,118 @@ def view_image(request):
         "view_image.html",
         {"image_name": image_name, "width": width, "height": height},
     )
+
+
+def get_annotations(request):
+    
+    ndpa_file_path = os.path.join(settings.BASE_DIR, 'static', 'images', 'test.ndpa')
+
+    if not os.path.exists(ndpa_file_path):
+        return JsonResponse({'error': 'Annotations file not found'}, status=404)
+
+    # Read the annotations from the NDPA file
+    with open(ndpa_file_path, 'r') as file:
+        try:
+            annotations = json.load(file)  # Assuming the .ndpa file is in JSON format
+        except json.JSONDecodeError:
+            return JsonResponse({'error': 'Invalid JSON format in annotations file'}, status=400)
+
+    # Return the annotations as JSON
+    return JsonResponse({'annotations': annotations})
+
+
+
+
+
+
+# def view_bnc_adjusted_image(request, image_name):
+    
+#     image_path = os.path.join(settings.BASE_DIR, 'static', 'images', f'{image_name}.ndpi')
+    
+#     if not os.path.exists(image_path):
+#         return HttpResponse("Image not found", status=404)
+
+    
+#     slide = openslide.OpenSlide(image_path)
+
+    
+#     width, height = slide.dimensions
+
+#     # Optionally, you can extract a region of the image to handle memory issues
+#     # For example, extract the whole image at level 0 (original resolution)
+#     #GPT idea da 
+#     img = np.array(slide.read_region((0, 0), 0, (width, height)))
+
+#     # Convert the image to grayscale if it's RGBA or RGB
+#     if img.shape[2] > 1:
+#         img = np.mean(img, axis=2).astype(np.uint8)
+
+#     # Apply the BNC adjustment
+#     adjusted_img = get_bnc_adjusted(img)
+
+#     # Save the adjusted image temporarily to serve it
+#     temp_image_path = os.path.join(settings.BASE_DIR, 'static', 'images', f'{image_name}_bnc_adjusted.png')
+#     Image.fromarray(adjusted_img).save(temp_image_path)
+
+#     # Pass the adjusted image path to the template
+#     return render(request, 'view_bnc_adjusted_image.html', {
+#         'image_name': f'{image_name}_bnc_adjusted',
+#         'width': adjusted_img.shape[1],
+#         'height': adjusted_img.shape[0],
+#     })
+
+
+def get_annotations_xml(request):
+    """
+    New API endpoint that reads annotations uding xml logic
+    """
+    ndpa_file_path = os.path.join(settings.BASE_DIR, 'static', 'images', 'test1.ndpa')
+    
+    if not os.path.exists(ndpa_file_path):
+        return JsonResponse({'error': 'NDPA file not found'}, status=404)
+    
+    try:
+        tree = ET.parse(ndpa_file_path)
+        root = tree.getroot()
+    except Exception as e:
+        return JsonResponse({'error': f'Error parsing NDPA file: {str(e)}'}, status=500)
+    
+    annotations = []
+    
+    for annotation in root.findall('ndpviewstate'):
+        title_elem = annotation.find('title')
+        title = title_elem.text if title_elem is not None else ''
+        
+        # Get the color from the XML, or default to red if not provided.
+        color_elem = annotation.find('color')
+        color = color_elem.text if color_elem is not None else "red"
+        
+        pointlist = annotation.find('pointlist')
+        if pointlist is not None:
+            x_vals = []
+            y_vals = []
+            for point in pointlist.findall('point'):
+                x_elem = point.find('x')
+                y_elem = point.find('y')
+                if x_elem is not None and y_elem is not None:
+                    try:
+                        x_vals.append(int(x_elem.text))
+                        y_vals.append(int(y_elem.text))
+                    except (ValueError, TypeError):
+                        continue
+            if x_vals and y_vals:
+                x1 = min(x_vals)
+                x2 = max(x_vals)
+                y1 = min(y_vals)
+                y2 = max(y_vals)
+                
+                annotations.append({
+                    'title': title,
+                    'x': x1,
+                    'y': y1,
+                    'width': x2 - x1,
+                    'height': y2 - y1,
+                    'color': color,
+                })
+    
+    return JsonResponse({'annotations': annotations})

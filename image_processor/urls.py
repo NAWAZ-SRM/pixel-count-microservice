@@ -11,6 +11,10 @@ from .views import (
     open_slide,
     view_image,
     custom_404,
+    get_annotations,
+    # render_bnc_adjusted_view,
+    # view_bnc_adjusted_image,
+    get_annotations_xml,
 )
 
 urlpatterns = [
@@ -26,4 +30,8 @@ urlpatterns = [
     path('open-slide/<int:level>/<int:row>/<int:col>/', open_slide, name='open_slide'),
     path("view_image/", view_image, name="view_image"),
     path("404/", custom_404, name="404"),
+    path("annotations/", get_annotations, name="get_annotations"),
+    # path('view_bnc_adjusted_image/<str:image_name>/', view_bnc_adjusted_image, name='view_bnc_adjusted_image'),
+    path('annotations-xml/', get_annotations_xml, name='annotations_xml'),
 ]
+
