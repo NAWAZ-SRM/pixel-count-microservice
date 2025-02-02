@@ -1,5 +1,4 @@
-"""
-URL configuration for pixel_counter project.
+"""URL configuration for pixel_counter project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
@@ -16,7 +15,12 @@ Including another URLconf
 """
 
 from django.urls import include, path
+from django.shortcuts import redirect
 
+
+def redirect_to_login(request):
+    return redirect("/api/login/")
 urlpatterns = [
+    path("", redirect_to_login),
     path("api/", include("image_processor.urls")),
 ]
