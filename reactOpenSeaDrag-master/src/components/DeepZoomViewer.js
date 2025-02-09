@@ -235,7 +235,7 @@ const DeepZoomViewer = ({ tileSources, zoomLevel, xCoord, yCoord, annotDetArr, i
     });
     
     
-    let image = { "Image": { "Format": "jpeg", "Overlap": 1, "Size": { "Height": heightTile, "Width":  widthTile}, "TileSize": 512, "Url": `http://127.0.0.1:5000/tile/${Doctor}/${tileName}/`, "xmlns": "http://schemas.microsoft.com/deepzoom/2008" }, "crossOriginPolicy": 'Anonymous', "ajaxWithCredentials": false, "useCanvas": true }
+    let image = { "Image": { "Format": "jpeg", "Overlap": 1, "Size": { "Height": heightTile, "Width":  widthTile}, "TileSize": 512, "Url": `http://0.0.0.0:5000/tile/${Doctor}/${tileName}/`, "xmlns": "http://schemas.microsoft.com/deepzoom/2008" }, "crossOriginPolicy": 'Anonymous', "ajaxWithCredentials": false, "useCanvas": true }
     // let image = { "Image": { "Format": "jpeg", "Overlap": 1, "Size": { "Height": 61440, "Width":60928  }, "TileSize": 512, "Url": `http://127.0.0.1:5000/tile/${Doctor}/${tileName}/`, "xmlns": "http://schemas.microsoft.com/deepzoom/2008" }, "crossOriginPolicy": 'Anonymous', "ajaxWithCredentials": false, "useCanvas": true }
     // let image = { "Image": { "Format": "jpeg", "Overlap": 1 , "Size": { "Height": 79360, "Width":75264  }, "TileSize": 512, "Url": `http://127.0.0.1:5000/tile/${Doctor}/${tileName}/`, "xmlns": "http://schemas.microsoft.com/deepzoom/2008" }, "crossOriginPolicy": 'Anonymous', "ajaxWithCredentials": false, "useCanvas": true }
 
@@ -250,13 +250,13 @@ const DeepZoomViewer = ({ tileSources, zoomLevel, xCoord, yCoord, annotDetArr, i
     anno.on('deleteAnnotation', async (annotation) => {
       // console.log(annotation);
       anno.removeAnnotation(annotation.id);
-      await onFetchData('http://127.0.0.1:5000/deleteAnnotation', 'POST', { id: annotation.id })
+      await onFetchData('http://0.0.0.0:5000/deleteAnnotation', 'POST', { id: annotation.id })
     });
 
     anno.on("createAnnotation", async function (annotation) {
 
 
-      await onFetchData('http://127.0.0.1:5000/getAnnotation', 'POST', annotation)
+      await onFetchData('http://0.0.0.0:5000/getAnnotation', 'POST', annotation)
 
     });
 
@@ -326,7 +326,7 @@ const DeepZoomViewer = ({ tileSources, zoomLevel, xCoord, yCoord, annotDetArr, i
   }, [tileSources]);
 
   const getSavedAnnotation = async () => {
-    let savedData = await onFetchData('http://127.0.0.1:5000/getSavedAnnotation', 'GET',)
+    let savedData = await onFetchData('http://0.0.0.0:5000/getSavedAnnotation', 'GET',)
     return savedData;
   };
 
