@@ -22,7 +22,7 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 
-const images = Array(100).fill({ src: `http://0.0.0.0:5000/get_image/0`, width: 1, height: 1 }); // Replace with your array of images
+const images = Array(100).fill({ src: `http://34.28.249.83:5000/get_image/0`, width: 1, height: 1 }); // Replace with your array of images
 
 const IMAGES_PER_PAGE = 10;
 

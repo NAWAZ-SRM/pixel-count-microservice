@@ -51,7 +51,7 @@ const FileViewer = (doctorData) => {
   }
 
   const fetchData = async (pathT) => {
-    const path = `http://0.0.0.0:5000/${pathT}`; // Replace with your API path
+    const path = `http://34.28.249.83:5000/${pathT}`; // Replace with your API path
     const method = 'GET'; // Replace with your method
     const body = {}; // Replace with your body
 
