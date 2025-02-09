@@ -1,26 +1,3405 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Annotations>
-    <ndpviewstate id="1">
-        <title>Large Red Rectangle</title>
-        <cat>Test</cat>
-        <color>#FF0000</color> <!-- Red Color -->
-        <pointlist>
-            <point>
-                <x>1000</x>
-                <y>1000</y>
-            </point>
-            <point>
-                <x>4000</x>
-                <y>1000</y>
-            </point>
-            <point>
-                <x>4000</x>
-                <y>3000</y>
-            </point>
-            <point>
-                <x>1000</x>
-                <y>3000</y>
-            </point>
-        </pointlist>
-    </ndpviewstate>
-</Annotations>
+<annotations>
+	<ndpviewstate id="0">
+		<title>ascus 0.560</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.56</cat>
+		<predict>ascus 0.56</predict>
+		<x>19271368</x>
+		<y>-7213955</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.559</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>19237218</x>
+					<y>-7248879</y>
+				</point>
+				<point>
+					<x>19237218</x>
+					<y>-7179031</y>
+				</point>
+				<point>
+					<x>19305519</x>
+					<y>-7179031</y>
+				</point>
+				<point>
+					<x>19305519</x>
+					<y>-7248879</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="1">
+		<title>ascus 0.641</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.64</cat>
+		<predict>ascus 0.64</predict>
+		<x>16757056</x>
+		<y>-6270453</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.642</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>16736389</x>
+					<y>-6291120</y>
+				</point>
+				<point>
+					<x>16736389</x>
+					<y>-6249786</y>
+				</point>
+				<point>
+					<x>16777723</x>
+					<y>-6249786</y>
+				</point>
+				<point>
+					<x>16777723</x>
+					<y>-6291120</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="2">
+		<title>ascus 0.712</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.71</cat>
+		<predict>ascus 0.71</predict>
+		<x>23343117</x>
+		<y>-5077066</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.707</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#FFA500">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>23316924</x>
+					<y>-5103259</y>
+				</point>
+				<point>
+					<x>23316924</x>
+					<y>-5050873</y>
+				</point>
+				<point>
+					<x>23369310</x>
+					<y>-5050873</y>
+				</point>
+				<point>
+					<x>23369310</x>
+					<y>-5103259</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="3">
+		<title>asch 0.513</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>asch 0.51</cat>
+		<predict>asch 0.51</predict>
+		<x>27064520</x>
+		<y>-4978593</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.511</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>27047169</x>
+					<y>-4995613</y>
+				</point>
+				<point>
+					<x>27047169</x>
+					<y>-4961574</y>
+				</point>
+				<point>
+					<x>27081872</x>
+					<y>-4961574</y>
+				</point>
+				<point>
+					<x>27081872</x>
+					<y>-4995613</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="4">
+		<title>lsil 0.544</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>lsil 0.54</cat>
+		<predict>lsil 0.54</predict>
+		<x>27444707</x>
+		<y>-4417487</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.54</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>27424039</x>
+					<y>-4440586</y>
+				</point>
+				<point>
+					<x>27424039</x>
+					<y>-4394389</y>
+				</point>
+				<point>
+					<x>27465374</x>
+					<y>-4394389</y>
+				</point>
+				<point>
+					<x>27465374</x>
+					<y>-4440586</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="5">
+		<title>ascus 0.735</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.73</cat>
+		<predict>ascus 0.73</predict>
+		<x>24814570</x>
+		<y>-3741552</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.732</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#FFA500">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>24804292</x>
+					<y>-3758903</y>
+				</point>
+				<point>
+					<x>24804292</x>
+					<y>-3724200</y>
+				</point>
+				<point>
+					<x>24824848</x>
+					<y>-3724200</y>
+				</point>
+				<point>
+					<x>24824848</x>
+					<y>-3758903</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="6">
+		<title>ascus 0.756</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.75</cat>
+		<predict>ascus 0.75</predict>
+		<x>18280342</x>
+		<y>-3673472</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.753</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#FFA500">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>18252713</x>
+					<y>-3700107</y>
+				</point>
+				<point>
+					<x>18252713</x>
+					<y>-3646837</y>
+				</point>
+				<point>
+					<x>18307972</x>
+					<y>-3646837</y>
+				</point>
+				<point>
+					<x>18307972</x>
+					<y>-3700107</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="7">
+		<title>ascus 0.547</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.54</cat>
+		<predict>ascus 0.54</predict>
+		<x>27000088</x>
+		<y>-3105403</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.541</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>26982626</x>
+					<y>-3123197</y>
+				</point>
+				<point>
+					<x>26982626</x>
+					<y>-3087610</y>
+				</point>
+				<point>
+					<x>27017550</x>
+					<y>-3087610</y>
+				</point>
+				<point>
+					<x>27017550</x>
+					<y>-3123197</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="8">
+		<title>hsil 0.758</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>hsil 0.75</cat>
+		<predict>hsil 0.75</predict>
+		<x>27030370</x>
+		<y>-3127728</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.746</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#FFA500">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>27017771</x>
+					<y>-3139996</y>
+				</point>
+				<point>
+					<x>27017771</x>
+					<y>-3115460</y>
+				</point>
+				<point>
+					<x>27042969</x>
+					<y>-3115460</y>
+				</point>
+				<point>
+					<x>27042969</x>
+					<y>-3139996</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="9">
+		<title>ascus 0.589</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.58</cat>
+		<predict>ascus 0.58</predict>
+		<x>17329545</x>
+		<y>-2969575</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.576</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>17315952</x>
+					<y>-2982395</y>
+				</point>
+				<point>
+					<x>17315952</x>
+					<y>-2956755</y>
+				</point>
+				<point>
+					<x>17343139</x>
+					<y>-2956755</y>
+				</point>
+				<point>
+					<x>17343139</x>
+					<y>-2982395</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="10">
+		<title>ascus 0.5010</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.50</cat>
+		<predict>ascus 0.50</predict>
+		<x>26923608</x>
+		<y>-2855519</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.501</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>26892000</x>
+					<y>-2889338</y>
+				</point>
+				<point>
+					<x>26892000</x>
+					<y>-2821700</y>
+				</point>
+				<point>
+					<x>26955217</x>
+					<y>-2821700</y>
+				</point>
+				<point>
+					<x>26955217</x>
+					<y>-2889338</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="11">
+		<title>ascus 0.8111</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.81</cat>
+		<predict>ascus 0.81</predict>
+		<x>26373886</x>
+		<y>-2711181</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.811</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#FFA500">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>26354434</x>
+					<y>-2730633</y>
+				</point>
+				<point>
+					<x>26354434</x>
+					<y>-2691730</y>
+				</point>
+				<point>
+					<x>26393337</x>
+					<y>-2691730</y>
+				</point>
+				<point>
+					<x>26393337</x>
+					<y>-2730633</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="12">
+		<title>ascus 0.7912</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.79</cat>
+		<predict>ascus 0.79</predict>
+		<x>18155566</x>
+		<y>-2320275</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.787</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#FFA500">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>18131141</x>
+					<y>-2346468</y>
+				</point>
+				<point>
+					<x>18131141</x>
+					<y>-2294082</y>
+				</point>
+				<point>
+					<x>18179991</x>
+					<y>-2294082</y>
+				</point>
+				<point>
+					<x>18179991</x>
+					<y>-2346468</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="13">
+		<title>ascus 0.7213</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.72</cat>
+		<predict>ascus 0.72</predict>
+		<x>23562719</x>
+		<y>-2148638</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.719</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#FFA500">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>23548794</x>
+					<y>-2166321</y>
+				</point>
+				<point>
+					<x>23548794</x>
+					<y>-2130955</y>
+				</point>
+				<point>
+					<x>23576644</x>
+					<y>-2130955</y>
+				</point>
+				<point>
+					<x>23576644</x>
+					<y>-2166321</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="14">
+		<title>ascus 0.5014</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.50</cat>
+		<predict>ascus 0.50</predict>
+		<x>28329634</x>
+		<y>-2641996</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.501</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>28292720</x>
+					<y>-2681341</y>
+				</point>
+				<point>
+					<x>28292720</x>
+					<y>-2602651</y>
+				</point>
+				<point>
+					<x>28366547</x>
+					<y>-2602651</y>
+				</point>
+				<point>
+					<x>28366547</x>
+					<y>-2681341</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="15">
+		<title>ascus 0.6915</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.69</cat>
+		<predict>ascus 0.69</predict>
+		<x>19426206</x>
+		<y>-2040330</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.695</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>19403660</x>
+					<y>-2064423</y>
+				</point>
+				<point>
+					<x>19403660</x>
+					<y>-2016236</y>
+				</point>
+				<point>
+					<x>19448752</x>
+					<y>-2016236</y>
+				</point>
+				<point>
+					<x>19448752</x>
+					<y>-2064423</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="16">
+		<title>lsil 0.5916</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>lsil 0.59</cat>
+		<predict>lsil 0.59</predict>
+		<x>21902941</x>
+		<y>-2291098</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.588</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>21869122</x>
+					<y>-2322375</y>
+				</point>
+				<point>
+					<x>21869122</x>
+					<y>-2259821</y>
+				</point>
+				<point>
+					<x>21936760</x>
+					<y>-2259821</y>
+				</point>
+				<point>
+					<x>21936760</x>
+					<y>-2322375</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="17">
+		<title>ascus 0.7117</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.71</cat>
+		<predict>ascus 0.71</predict>
+		<x>22875068</x>
+		<y>-2097357</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.708</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#FFA500">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>22836829</x>
+					<y>-2135818</y>
+				</point>
+				<point>
+					<x>22836829</x>
+					<y>-2058897</y>
+				</point>
+				<point>
+					<x>22913308</x>
+					<y>-2058897</y>
+				</point>
+				<point>
+					<x>22913308</x>
+					<y>-2135818</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="18">
+		<title>ascus 0.6018</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.60</cat>
+		<predict>ascus 0.60</predict>
+		<x>18234477</x>
+		<y>-1916659</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.6</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>18211157</x>
+					<y>-1945504</y>
+				</point>
+				<point>
+					<x>18211157</x>
+					<y>-1887813</y>
+				</point>
+				<point>
+					<x>18257796</x>
+					<y>-1887813</y>
+				</point>
+				<point>
+					<x>18257796</x>
+					<y>-1945504</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="19">
+		<title>ascus 0.8419</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.84</cat>
+		<predict>ascus 0.84</predict>
+		<x>26112397</x>
+		<y>-2005848</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.837</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#FFA500">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>26098251</x>
+					<y>-2018447</y>
+				</point>
+				<point>
+					<x>26098251</x>
+					<y>-1993248</y>
+				</point>
+				<point>
+					<x>26126544</x>
+					<y>-1993248</y>
+				</point>
+				<point>
+					<x>26126544</x>
+					<y>-2018447</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="20">
+		<title>ascus 0.5420</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.54</cat>
+		<predict>ascus 0.54</predict>
+		<x>26316084</x>
+		<y>-1748338</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.536</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>26294312</x>
+					<y>-1770884</y>
+				</point>
+				<point>
+					<x>26294312</x>
+					<y>-1725792</y>
+				</point>
+				<point>
+					<x>26337857</x>
+					<y>-1725792</y>
+				</point>
+				<point>
+					<x>26337857</x>
+					<y>-1770884</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="21">
+		<title>lsil 0.7921</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>lsil 0.79</cat>
+		<predict>lsil 0.79</predict>
+		<x>22125306</x>
+		<y>-1584217</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.7798750000000001</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#FFA500">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>22103644</x>
+					<y>-1608862</y>
+				</point>
+				<point>
+					<x>22103644</x>
+					<y>-1559571</y>
+				</point>
+				<point>
+					<x>22146968</x>
+					<y>-1559571</y>
+				</point>
+				<point>
+					<x>22146968</x>
+					<y>-1608862</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="22">
+		<title>ascus 0.7122</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.71</cat>
+		<predict>ascus 0.71</predict>
+		<x>19692115</x>
+		<y>-1362294</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.708</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#FFA500">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>19673548</x>
+					<y>-1382740</y>
+				</point>
+				<point>
+					<x>19673548</x>
+					<y>-1341848</y>
+				</point>
+				<point>
+					<x>19710682</x>
+					<y>-1341848</y>
+				</point>
+				<point>
+					<x>19710682</x>
+					<y>-1382740</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="23">
+		<title>ascus 0.8823</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.88</cat>
+		<predict>ascus 0.88</predict>
+		<x>27927676</x>
+		<y>-1536030</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.875</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#FFA500">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>27900819</x>
+					<y>-1563550</y>
+				</point>
+				<point>
+					<x>27900819</x>
+					<y>-1508511</y>
+				</point>
+				<point>
+					<x>27954532</x>
+					<y>-1508511</y>
+				</point>
+				<point>
+					<x>27954532</x>
+					<y>-1563550</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="24">
+		<title>ascus 0.5524</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.55</cat>
+		<predict>ascus 0.55</predict>
+		<x>18939147</x>
+		<y>-1061682</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.552</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>18914723</x>
+					<y>-1089864</y>
+				</point>
+				<point>
+					<x>18914723</x>
+					<y>-1033499</y>
+				</point>
+				<point>
+					<x>18963572</x>
+					<y>-1033499</y>
+				</point>
+				<point>
+					<x>18963572</x>
+					<y>-1089864</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="25">
+		<title>ascus 0.7525</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.75</cat>
+		<predict>ascus 0.75</predict>
+		<x>22952432</x>
+		<y>-1121915</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.748</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#FFA500">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>22909992</x>
+					<y>-1163691</y>
+				</point>
+				<point>
+					<x>22909992</x>
+					<y>-1080139</y>
+				</point>
+				<point>
+					<x>22994871</x>
+					<y>-1080139</y>
+				</point>
+				<point>
+					<x>22994871</x>
+					<y>-1163691</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="26">
+		<title>asch 0.6626</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>asch 0.66</cat>
+		<predict>asch 0.66</predict>
+		<x>19874693</x>
+		<y>-973488</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.661</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>19851263</x>
+					<y>-999681</y>
+				</point>
+				<point>
+					<x>19851263</x>
+					<y>-947294</y>
+				</point>
+				<point>
+					<x>19898123</x>
+					<y>-947294</y>
+				</point>
+				<point>
+					<x>19898123</x>
+					<y>-999681</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="27">
+		<title>ascus 0.7527</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.75</cat>
+		<predict>ascus 0.75</predict>
+		<x>22559094</x>
+		<y>-950500</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.752</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#FFA500">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>22539311</x>
+					<y>-969840</y>
+				</point>
+				<point>
+					<x>22539311</x>
+					<y>-931159</y>
+				</point>
+				<point>
+					<x>22578877</x>
+					<y>-931159</y>
+				</point>
+				<point>
+					<x>22578877</x>
+					<y>-969840</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="28">
+		<title>ascus 0.7828</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.78</cat>
+		<predict>ascus 0.78</predict>
+		<x>22589929</x>
+		<y>-894024</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.779</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#FFA500">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>22557657</x>
+					<y>-925191</y>
+				</point>
+				<point>
+					<x>22557657</x>
+					<y>-862858</y>
+				</point>
+				<point>
+					<x>22622200</x>
+					<y>-862858</y>
+				</point>
+				<point>
+					<x>22622200</x>
+					<y>-925191</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="29">
+		<title>ascus 0.5829</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.58</cat>
+		<predict>ascus 0.58</predict>
+		<x>22647067</x>
+		<y>-749797</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.58</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>22629716</x>
+					<y>-771348</y>
+				</point>
+				<point>
+					<x>22629716</x>
+					<y>-728245</y>
+				</point>
+				<point>
+					<x>22664419</x>
+					<y>-728245</y>
+				</point>
+				<point>
+					<x>22664419</x>
+					<y>-771348</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="30">
+		<title>ascus 0.6230</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.62</cat>
+		<predict>ascus 0.62</predict>
+		<x>22581529</x>
+		<y>-768474</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.617</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>22552573</x>
+					<y>-796767</y>
+				</point>
+				<point>
+					<x>22552573</x>
+					<y>-740181</y>
+				</point>
+				<point>
+					<x>22610485</x>
+					<y>-740181</y>
+				</point>
+				<point>
+					<x>22610485</x>
+					<y>-796767</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="31">
+		<title>ascus 0.5631</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.56</cat>
+		<predict>ascus 0.56</predict>
+		<x>25368492</x>
+		<y>-714762</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.56</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>25347383</x>
+					<y>-734213</y>
+				</point>
+				<point>
+					<x>25347383</x>
+					<y>-695311</y>
+				</point>
+				<point>
+					<x>25389602</x>
+					<y>-695311</y>
+				</point>
+				<point>
+					<x>25389602</x>
+					<y>-734213</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="32">
+		<title>ascus 0.8832</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.88</cat>
+		<predict>ascus 0.88</predict>
+		<x>28418823</x>
+		<y>-767369</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.885</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#FFA500">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>28392630</x>
+					<y>-793010</y>
+				</point>
+				<point>
+					<x>28392630</x>
+					<y>-741729</y>
+				</point>
+				<point>
+					<x>28445016</x>
+					<y>-741729</y>
+				</point>
+				<point>
+					<x>28445016</x>
+					<y>-793010</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="33">
+		<title>asch 0.8233</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>asch 0.82</cat>
+		<predict>asch 0.82</predict>
+		<x>17231625</x>
+		<y>-725703</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.822</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#FFA500">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>17216484</x>
+					<y>-740845</y>
+				</point>
+				<point>
+					<x>17216484</x>
+					<y>-710562</y>
+				</point>
+				<point>
+					<x>17246767</x>
+					<y>-710562</y>
+				</point>
+				<point>
+					<x>17246767</x>
+					<y>-740845</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="34">
+		<title>asch 0.8334</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>asch 0.83</cat>
+		<predict>asch 0.83</predict>
+		<x>23645387</x>
+		<y>-574403</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.826</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#FFA500">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>23627925</x>
+					<y>-591644</y>
+				</point>
+				<point>
+					<x>23627925</x>
+					<y>-557162</y>
+				</point>
+				<point>
+					<x>23662849</x>
+					<y>-557162</y>
+				</point>
+				<point>
+					<x>23662849</x>
+					<y>-591644</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="35">
+		<title>ascus 0.5935</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.59</cat>
+		<predict>ascus 0.59</predict>
+		<x>23186180</x>
+		<y>-625905</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.592</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>23167502</x>
+					<y>-647787</y>
+				</point>
+				<point>
+					<x>23167502</x>
+					<y>-604022</y>
+				</point>
+				<point>
+					<x>23204858</x>
+					<y>-604022</y>
+				</point>
+				<point>
+					<x>23204858</x>
+					<y>-647787</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="36">
+		<title>lsil 0.6636</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>lsil 0.66</cat>
+		<predict>lsil 0.66</predict>
+		<x>19164054</x>
+		<y>-495381</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.656</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>19130456</x>
+					<y>-530637</y>
+				</point>
+				<point>
+					<x>19130456</x>
+					<y>-460126</y>
+				</point>
+				<point>
+					<x>19197652</x>
+					<y>-460126</y>
+				</point>
+				<point>
+					<x>19197652</x>
+					<y>-530637</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="37">
+		<title>ascus 0.7937</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.79</cat>
+		<predict>ascus 0.79</predict>
+		<x>26555690</x>
+		<y>-398677</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.787</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#FFA500">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>26530160</x>
+					<y>-425865</y>
+				</point>
+				<point>
+					<x>26530160</x>
+					<y>-371489</y>
+				</point>
+				<point>
+					<x>26581220</x>
+					<y>-371489</y>
+				</point>
+				<point>
+					<x>26581220</x>
+					<y>-425865</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="38">
+		<title>asch 0.8438</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>asch 0.84</cat>
+		<predict>asch 0.84</predict>
+		<x>27553789</x>
+		<y>-187917</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.836</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#FFA500">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>27535885</x>
+					<y>-205268</y>
+				</point>
+				<point>
+					<x>27535885</x>
+					<y>-170565</y>
+				</point>
+				<point>
+					<x>27571693</x>
+					<y>-170565</y>
+				</point>
+				<point>
+					<x>27571693</x>
+					<y>-205268</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="39">
+		<title>ascus 0.5939</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.59</cat>
+		<predict>ascus 0.59</predict>
+		<x>19593421</x>
+		<y>16985</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.587</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>19568996</x>
+					<y>6264</y>
+				</point>
+				<point>
+					<x>19568996</x>
+					<y>27705</y>
+				</point>
+				<point>
+					<x>19617846</x>
+					<y>27705</y>
+				</point>
+				<point>
+					<x>19617846</x>
+					<y>6264</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="40">
+		<title>ascus 0.8140</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.81</cat>
+		<predict>ascus 0.81</predict>
+		<x>19558387</x>
+		<y>70034</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.813</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#FFA500">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>19538272</x>
+					<y>51135</y>
+				</point>
+				<point>
+					<x>19538272</x>
+					<y>88933</y>
+				</point>
+				<point>
+					<x>19578501</x>
+					<y>88933</y>
+				</point>
+				<point>
+					<x>19578501</x>
+					<y>51135</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="41">
+		<title>ascus 0.5941</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.59</cat>
+		<predict>ascus 0.59</predict>
+		<x>23611237</x>
+		<y>41409</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.593</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>23585044</x>
+					<y>10022</y>
+				</point>
+				<point>
+					<x>23585044</x>
+					<y>72797</y>
+				</point>
+				<point>
+					<x>23637430</x>
+					<y>72797</y>
+				</point>
+				<point>
+					<x>23637430</x>
+					<y>10022</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="42">
+		<title>asch 0.7042</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>asch 0.70</cat>
+		<predict>asch 0.70</predict>
+		<x>23689484</x>
+		<y>25163</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.696</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>23676554</x>
+					<y>11127</y>
+				</point>
+				<point>
+					<x>23676554</x>
+					<y>39199</y>
+				</point>
+				<point>
+					<x>23702415</x>
+					<y>39199</y>
+				</point>
+				<point>
+					<x>23702415</x>
+					<y>11127</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="43">
+		<title>asch 0.5243</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>asch 0.52</cat>
+		<predict>asch 0.52</predict>
+		<x>16651400</x>
+		<y>467461</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.5325</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>16635153</x>
+					<y>451436</y>
+				</point>
+				<point>
+					<x>16635153</x>
+					<y>483486</y>
+				</point>
+				<point>
+					<x>16667646</x>
+					<y>483486</y>
+				</point>
+				<point>
+					<x>16667646</x>
+					<y>451436</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="44">
+		<title>asch 0.5744</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>asch 0.57</cat>
+		<predict>asch 0.57</predict>
+		<x>27934307</x>
+		<y>27374</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.571</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>27920271</x>
+					<y>12674</y>
+				</point>
+				<point>
+					<x>27920271</x>
+					<y>42073</y>
+				</point>
+				<point>
+					<x>27948343</x>
+					<y>42073</y>
+				</point>
+				<point>
+					<x>27948343</x>
+					<y>12674</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="45">
+		<title>ascus 0.5345</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.53</cat>
+		<predict>ascus 0.53</predict>
+		<x>21154616</x>
+		<y>389877</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.529</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>21145885</x>
+					<y>372525</y>
+				</point>
+				<point>
+					<x>21145885</x>
+					<y>407228</y>
+				</point>
+				<point>
+					<x>21163347</x>
+					<y>407228</y>
+				</point>
+				<point>
+					<x>21163347</x>
+					<y>372525</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="46">
+		<title>ascus 0.8246</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.82</cat>
+		<predict>ascus 0.82</predict>
+		<x>18002386</x>
+		<y>488570</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.824</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#FFA500">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>17983046</x>
+					<y>469340</y>
+				</point>
+				<point>
+					<x>17983046</x>
+					<y>507801</y>
+				</point>
+				<point>
+					<x>18021727</x>
+					<y>507801</y>
+				</point>
+				<point>
+					<x>18021727</x>
+					<y>469340</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="47">
+		<title>asch 0.5547</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>asch 0.55</cat>
+		<predict>asch 0.55</predict>
+		<x>25794986</x>
+		<y>557092</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.554</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>25779956</x>
+					<y>542946</y>
+				</point>
+				<point>
+					<x>25779956</x>
+					<y>571239</y>
+				</point>
+				<point>
+					<x>25810017</x>
+					<y>571239</y>
+				</point>
+				<point>
+					<x>25810017</x>
+					<y>542946</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="48">
+		<title>lsil 0.7248</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>lsil 0.72</cat>
+		<predict>lsil 0.72</predict>
+		<x>18819455</x>
+		<y>861131</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.718</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#FFA500">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>18801772</x>
+					<y>843116</y>
+				</point>
+				<point>
+					<x>18801772</x>
+					<y>879145</y>
+				</point>
+				<point>
+					<x>18837138</x>
+					<y>879145</y>
+				</point>
+				<point>
+					<x>18837138</x>
+					<y>843116</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="49">
+		<title>lsil 0.7149</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>lsil 0.71</cat>
+		<predict>lsil 0.71</predict>
+		<x>16666651</x>
+		<y>1017294</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.709</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#FFA500">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>16630511</x>
+					<y>978834</y>
+				</point>
+				<point>
+					<x>16630511</x>
+					<y>1055755</y>
+				</point>
+				<point>
+					<x>16702791</x>
+					<y>1055755</y>
+				</point>
+				<point>
+					<x>16702791</x>
+					<y>978834</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="50">
+		<title>agus nos 0.6750</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>agus nos 0.67</cat>
+		<predict>agus nos 0.67</predict>
+		<x>22925023</x>
+		<y>1103499</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.762</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#FFA500">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>22904909</x>
+					<y>1083164</y>
+				</point>
+				<point>
+					<x>22904909</x>
+					<y>1123835</y>
+				</point>
+				<point>
+					<x>22945138</x>
+					<y>1123835</y>
+				</point>
+				<point>
+					<x>22945138</x>
+					<y>1083164</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="51">
+		<title>ascus 0.5251</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.52</cat>
+		<predict>ascus 0.52</predict>
+		<x>26056033</x>
+		<y>1118198</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.518</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>26036581</x>
+					<y>1098857</y>
+				</point>
+				<point>
+					<x>26036581</x>
+					<y>1137539</y>
+				</point>
+				<point>
+					<x>26075484</x>
+					<y>1137539</y>
+				</point>
+				<point>
+					<x>26075484</x>
+					<y>1098857</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="52">
+		<title>ascus 0.5152</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.51</cat>
+		<predict>ascus 0.51</predict>
+		<x>26548727</x>
+		<y>855052</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.505</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>26531486</x>
+					<y>837811</y>
+				</point>
+				<point>
+					<x>26531486</x>
+					<y>872293</y>
+				</point>
+				<point>
+					<x>26565968</x>
+					<y>872293</y>
+				</point>
+				<point>
+					<x>26565968</x>
+					<y>837811</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="53">
+		<title>ascus 0.5153</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.51</cat>
+		<predict>ascus 0.51</predict>
+		<x>20317543</x>
+		<y>1267731</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.51</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>20295329</x>
+					<y>1246511</y>
+				</point>
+				<point>
+					<x>20295329</x>
+					<y>1288950</y>
+				</point>
+				<point>
+					<x>20339757</x>
+					<y>1288950</y>
+				</point>
+				<point>
+					<x>20339757</x>
+					<y>1246511</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="54">
+		<title>asch 0.9254</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>asch 0.92</cat>
+		<predict>asch 0.92</predict>
+		<x>15672310</x>
+		<y>1120740</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.9295</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#FFFF00">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>15653522</x>
+					<y>1103057</y>
+				</point>
+				<point>
+					<x>15653522</x>
+					<y>1138423</y>
+				</point>
+				<point>
+					<x>15691098</x>
+					<y>1138423</y>
+				</point>
+				<point>
+					<x>15691098</x>
+					<y>1103057</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="55">
+		<title>ascus 0.5455</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.54</cat>
+		<predict>ascus 0.54</predict>
+		<x>24949072</x>
+		<y>1210592</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.543</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>24931831</x>
+					<y>1191251</y>
+				</point>
+				<point>
+					<x>24931831</x>
+					<y>1229933</y>
+				</point>
+				<point>
+					<x>24966313</x>
+					<y>1229933</y>
+				</point>
+				<point>
+					<x>24966313</x>
+					<y>1191251</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="56">
+		<title>asch 0.5656</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>asch 0.56</cat>
+		<predict>asch 0.56</predict>
+		<x>20678609</x>
+		<y>1400133</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.558</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>20662253</x>
+					<y>1383997</y>
+				</point>
+				<point>
+					<x>20662253</x>
+					<y>1416269</y>
+				</point>
+				<point>
+					<x>20694966</x>
+					<y>1416269</y>
+				</point>
+				<point>
+					<x>20694966</x>
+					<y>1383997</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="57">
+		<title>ascus 0.6257</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.62</cat>
+		<predict>ascus 0.62</predict>
+		<x>22507924</x>
+		<y>1533972</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.621</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>22481399</x>
+					<y>1506231</y>
+				</point>
+				<point>
+					<x>22481399</x>
+					<y>1561712</y>
+				</point>
+				<point>
+					<x>22534448</x>
+					<y>1561712</y>
+				</point>
+				<point>
+					<x>22534448</x>
+					<y>1506231</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="58">
+		<title>asch 0.7058</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>asch 0.70</cat>
+		<predict>asch 0.70</predict>
+		<x>25279082</x>
+		<y>1388970</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.7</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#FFA500">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>25262947</x>
+					<y>1374050</y>
+				</point>
+				<point>
+					<x>25262947</x>
+					<y>1403890</y>
+				</point>
+				<point>
+					<x>25295218</x>
+					<y>1403890</y>
+				</point>
+				<point>
+					<x>25295218</x>
+					<y>1374050</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="59">
+		<title>ascus 0.5859</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.58</cat>
+		<predict>ascus 0.58</predict>
+		<x>15457018</x>
+		<y>1648138</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.577</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>15434472</x>
+					<y>1626034</y>
+				</point>
+				<point>
+					<x>15434472</x>
+					<y>1670242</y>
+				</point>
+				<point>
+					<x>15479564</x>
+					<y>1670242</y>
+				</point>
+				<point>
+					<x>15479564</x>
+					<y>1626034</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="60">
+		<title>ascus 0.9160</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.91</cat>
+		<predict>ascus 0.91</predict>
+		<x>21842598</x>
+		<y>1799770</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.913</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#FFFF00">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>21826462</x>
+					<y>1783413</y>
+				</point>
+				<point>
+					<x>21826462</x>
+					<y>1816127</y>
+				</point>
+				<point>
+					<x>21858734</x>
+					<y>1816127</y>
+				</point>
+				<point>
+					<x>21858734</x>
+					<y>1783413</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="61">
+		<title>lsil 0.6361</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>lsil 0.63</cat>
+		<predict>lsil 0.63</predict>
+		<x>25313564</x>
+		<y>1606583</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.631</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>25293892</x>
+					<y>1586026</y>
+				</point>
+				<point>
+					<x>25293892</x>
+					<y>1627139</y>
+				</point>
+				<point>
+					<x>25333237</x>
+					<y>1627139</y>
+				</point>
+				<point>
+					<x>25333237</x>
+					<y>1586026</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="62">
+		<title>ascus 0.5762</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.57</cat>
+		<predict>ascus 0.57</predict>
+		<x>26797285</x>
+		<y>1810380</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.571</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>26771976</x>
+					<y>1787392</y>
+				</point>
+				<point>
+					<x>26771976</x>
+					<y>1833368</y>
+				</point>
+				<point>
+					<x>26822594</x>
+					<y>1833368</y>
+				</point>
+				<point>
+					<x>26822594</x>
+					<y>1787392</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="63">
+		<title>ascus 0.7463</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.74</cat>
+		<predict>ascus 0.74</predict>
+		<x>25994031</x>
+		<y>1616198</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.736</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#FFA500">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>25970933</x>
+					<y>1593983</y>
+				</point>
+				<point>
+					<x>25970933</x>
+					<y>1638412</y>
+				</point>
+				<point>
+					<x>26017130</x>
+					<y>1638412</y>
+				</point>
+				<point>
+					<x>26017130</x>
+					<y>1593983</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="64">
+		<title>asch 0.6864</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>asch 0.68</cat>
+		<predict>asch 0.68</predict>
+		<x>27058663</x>
+		<y>1666484</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.678</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>27040538</x>
+					<y>1649022</y>
+				</point>
+				<point>
+					<x>27040538</x>
+					<y>1683946</y>
+				</point>
+				<point>
+					<x>27076788</x>
+					<y>1683946</y>
+				</point>
+				<point>
+					<x>27076788</x>
+					<y>1649022</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="65">
+		<title>ascus 0.7865</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.78</cat>
+		<predict>ascus 0.78</predict>
+		<x>19100616</x>
+		<y>1942340</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.777</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#FFA500">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>19080501</x>
+					<y>1925320</y>
+				</point>
+				<point>
+					<x>19080501</x>
+					<y>1959360</y>
+				</point>
+				<point>
+					<x>19120730</x>
+					<y>1959360</y>
+				</point>
+				<point>
+					<x>19120730</x>
+					<y>1925320</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="66">
+		<title>ascus 0.6366</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.63</cat>
+		<predict>ascus 0.63</predict>
+		<x>23636104</x>
+		<y>1879344</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.626</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>23613558</x>
+					<y>1855693</y>
+				</point>
+				<point>
+					<x>23613558</x>
+					<y>1902995</y>
+				</point>
+				<point>
+					<x>23658650</x>
+					<y>1902995</y>
+				</point>
+				<point>
+					<x>23658650</x>
+					<y>1855693</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="67">
+		<title>ascus 0.8367</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.83</cat>
+		<predict>ascus 0.83</predict>
+		<x>26826904</x>
+		<y>2024566</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.83</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#FFA500">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>26814415</x>
+					<y>2009757</y>
+				</point>
+				<point>
+					<x>26814415</x>
+					<y>2039376</y>
+				</point>
+				<point>
+					<x>26839393</x>
+					<y>2039376</y>
+				</point>
+				<point>
+					<x>26839393</x>
+					<y>2009757</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="68">
+		<title>asch 0.8468</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>asch 0.84</cat>
+		<predict>asch 0.84</predict>
+		<x>26746667</x>
+		<y>2046891</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.835</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#FFA500">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>26727105</x>
+					<y>2026998</y>
+				</point>
+				<point>
+					<x>26727105</x>
+					<y>2066785</y>
+				</point>
+				<point>
+					<x>26766229</x>
+					<y>2066785</y>
+				</point>
+				<point>
+					<x>26766229</x>
+					<y>2026998</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="69">
+		<title>asch 0.5469</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>asch 0.54</cat>
+		<predict>asch 0.54</predict>
+		<x>26561768</x>
+		<y>1978148</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.671</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>26545412</x>
+					<y>1962012</y>
+				</point>
+				<point>
+					<x>26545412</x>
+					<y>1994284</y>
+				</point>
+				<point>
+					<x>26578125</x>
+					<y>1994284</y>
+				</point>
+				<point>
+					<x>26578125</x>
+					<y>1962012</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="70">
+		<title>ascus 0.5470</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.54</cat>
+		<predict>ascus 0.54</predict>
+		<x>17996750</x>
+		<y>2280418</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.539</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>17978846</x>
+					<y>2261299</y>
+				</point>
+				<point>
+					<x>17978846</x>
+					<y>2299538</y>
+				</point>
+				<point>
+					<x>18014654</x>
+					<y>2299538</y>
+				</point>
+				<point>
+					<x>18014654</x>
+					<y>2261299</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="71">
+		<title>ascus 0.8071</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.80</cat>
+		<predict>ascus 0.80</predict>
+		<x>20187462</x>
+		<y>2088668</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.8</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#FFA500">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>20159611</x>
+					<y>2061038</y>
+				</point>
+				<point>
+					<x>20159611</x>
+					<y>2116297</y>
+				</point>
+				<point>
+					<x>20215313</x>
+					<y>2116297</y>
+				</point>
+				<point>
+					<x>20215313</x>
+					<y>2061038</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="72">
+		<title>ascus 0.8672</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.86</cat>
+		<predict>ascus 0.86</predict>
+		<x>20191772</x>
+		<y>1985332</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.861</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#FFA500">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>20172652</x>
+					<y>1965770</y>
+				</point>
+				<point>
+					<x>20172652</x>
+					<y>2004894</y>
+				</point>
+				<point>
+					<x>20210892</x>
+					<y>2004894</y>
+				</point>
+				<point>
+					<x>20210892</x>
+					<y>1965770</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="73">
+		<title>ascus 0.5373</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.53</cat>
+		<predict>ascus 0.53</predict>
+		<x>25879312</x>
+		<y>2210349</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.527</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>25858866</x>
+					<y>2189461</y>
+				</point>
+				<point>
+					<x>25858866</x>
+					<y>2231237</y>
+				</point>
+				<point>
+					<x>25899758</x>
+					<y>2231237</y>
+				</point>
+				<point>
+					<x>25899758</x>
+					<y>2189461</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="74">
+		<title>ascus 0.5274</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.52</cat>
+		<predict>ascus 0.52</predict>
+		<x>19568333</x>
+		<y>2459791</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.523</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>19558387</x>
+					<y>2436361</y>
+				</point>
+				<point>
+					<x>19558387</x>
+					<y>2483221</y>
+				</point>
+				<point>
+					<x>19578280</x>
+					<y>2483221</y>
+				</point>
+				<point>
+					<x>19578280</x>
+					<y>2436361</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="75">
+		<title>asch 0.5575</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>asch 0.55</cat>
+		<predict>asch 0.55</predict>
+		<x>21390574</x>
+		<y>2514056</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.551</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>21372670</x>
+					<y>2495378</y>
+				</point>
+				<point>
+					<x>21372670</x>
+					<y>2532734</y>
+				</point>
+				<point>
+					<x>21408478</x>
+					<y>2532734</y>
+				</point>
+				<point>
+					<x>21408478</x>
+					<y>2495378</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="76">
+		<title>ascus 0.6976</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.69</cat>
+		<predict>ascus 0.69</predict>
+		<x>22001967</x>
+		<y>2608218</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.687</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>21986052</x>
+					<y>2592856</y>
+				</point>
+				<point>
+					<x>21986052</x>
+					<y>2623581</y>
+				</point>
+				<point>
+					<x>22017881</x>
+					<y>2623581</y>
+				</point>
+				<point>
+					<x>22017881</x>
+					<y>2592856</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="77">
+		<title>ascus 0.7177</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.71</cat>
+		<predict>ascus 0.71</predict>
+		<x>21213854</x>
+		<y>2800190</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.712</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#FFA500">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>21183461</x>
+					<y>2782286</y>
+				</point>
+				<point>
+					<x>21183461</x>
+					<y>2818094</y>
+				</point>
+				<point>
+					<x>21244247</x>
+					<y>2818094</y>
+				</point>
+				<point>
+					<x>21244247</x>
+					<y>2782286</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="78">
+		<title>ascus 0.8778</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.87</cat>
+		<predict>ascus 0.87</predict>
+		<x>25193651</x>
+		<y>2895789</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.868</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#FFA500">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>25165248</x>
+					<y>2866944</y>
+				</point>
+				<point>
+					<x>25165248</x>
+					<y>2924635</y>
+				</point>
+				<point>
+					<x>25222054</x>
+					<y>2924635</y>
+				</point>
+				<point>
+					<x>25222054</x>
+					<y>2866944</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="79">
+		<title>asch 0.6579</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>asch 0.65</cat>
+		<predict>asch 0.65</predict>
+		<x>26892221</x>
+		<y>2733216</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.649</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>26872770</x>
+					<y>2713543</y>
+				</point>
+				<point>
+					<x>26872770</x>
+					<y>2752888</y>
+				</point>
+				<point>
+					<x>26911672</x>
+					<y>2752888</y>
+				</point>
+				<point>
+					<x>26911672</x>
+					<y>2713543</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="80">
+		<title>asch 0.8080</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>asch 0.80</cat>
+		<predict>asch 0.80</predict>
+		<x>26858181</x>
+		<y>2835225</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.796</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#FFA500">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>26844919</x>
+					<y>2821852</y>
+				</point>
+				<point>
+					<x>26844919</x>
+					<y>2848598</y>
+				</point>
+				<point>
+					<x>26871443</x>
+					<y>2848598</y>
+				</point>
+				<point>
+					<x>26871443</x>
+					<y>2821852</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="81">
+		<title>ascus 0.8181</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.81</cat>
+		<predict>ascus 0.81</predict>
+		<x>27861474</x>
+		<y>2973705</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.805</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#FFA500">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>27833624</x>
+					<y>2947623</y>
+				</point>
+				<point>
+					<x>27833624</x>
+					<y>2999788</y>
+				</point>
+				<point>
+					<x>27889325</x>
+					<y>2999788</y>
+				</point>
+				<point>
+					<x>27889325</x>
+					<y>2947623</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="82">
+		<title>ascus 0.5682</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.56</cat>
+		<predict>ascus 0.56</predict>
+		<x>15955460</x>
+		<y>3600791</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.562</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>15935788</x>
+					<y>3590182</y>
+				</point>
+				<point>
+					<x>15935788</x>
+					<y>3611401</y>
+				</point>
+				<point>
+					<x>15975132</x>
+					<y>3611401</y>
+				</point>
+				<point>
+					<x>15975132</x>
+					<y>3590182</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="83">
+		<title>ascus 0.5983</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.59</cat>
+		<predict>ascus 0.59</predict>
+		<x>15939656</x>
+		<y>3521439</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.594</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>15916557</x>
+					<y>3496903</y>
+				</point>
+				<point>
+					<x>15916557</x>
+					<y>3545974</y>
+				</point>
+				<point>
+					<x>15962754</x>
+					<y>3545974</y>
+				</point>
+				<point>
+					<x>15962754</x>
+					<y>3496903</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="84">
+		<title>ascus 0.5984</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.59</cat>
+		<predict>ascus 0.59</predict>
+		<x>23261886</x>
+		<y>3414014</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.586</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>23236024</x>
+					<y>3387489</y>
+				</point>
+				<point>
+					<x>23236024</x>
+					<y>3440539</y>
+				</point>
+				<point>
+					<x>23287747</x>
+					<y>3440539</y>
+				</point>
+				<point>
+					<x>23287747</x>
+					<y>3387489</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="85">
+		<title>ascus 0.7285</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.72</cat>
+		<predict>ascus 0.72</predict>
+		<x>23741318</x>
+		<y>4034248</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.717</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#FFA500">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>23720098</x>
+					<y>4010818</y>
+				</point>
+				<point>
+					<x>23720098</x>
+					<y>4057678</y>
+				</point>
+				<point>
+					<x>23762538</x>
+					<y>4057678</y>
+				</point>
+				<point>
+					<x>23762538</x>
+					<y>4010818</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="86">
+		<title>ascus 0.8886</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.88</cat>
+		<predict>ascus 0.88</predict>
+		<x>26749099</x>
+		<y>3861064</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.877</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#FFA500">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>26721800</x>
+					<y>3831556</y>
+				</point>
+				<point>
+					<x>26721800</x>
+					<y>3890573</y>
+				</point>
+				<point>
+					<x>26776397</x>
+					<y>3890573</y>
+				</point>
+				<point>
+					<x>26776397</x>
+					<y>3831556</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="87">
+		<title>asch 0.5387</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>asch 0.53</cat>
+		<predict>asch 0.53</predict>
+		<x>21670409</x>
+		<y>4204116</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.527</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#9acd32">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>21652947</x>
+					<y>4185438</y>
+				</point>
+				<point>
+					<x>21652947</x>
+					<y>4222794</y>
+				</point>
+				<point>
+					<x>21687871</x>
+					<y>4222794</y>
+				</point>
+				<point>
+					<x>21687871</x>
+					<y>4185438</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="88">
+		<title>ascus 0.8288</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>ascus 0.82</cat>
+		<predict>ascus 0.82</predict>
+		<x>25790897</x>
+		<y>4425486</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.823</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#FFA500">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>25772661</x>
+					<y>4408245</y>
+				</point>
+				<point>
+					<x>25772661</x>
+					<y>4442727</y>
+				</point>
+				<point>
+					<x>25809133</x>
+					<y>4442727</y>
+				</point>
+				<point>
+					<x>25809133</x>
+					<y>4408245</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="89">
+		<title>asch 0.7589</title>
+		<coordformat>nanometers</coordformat>
+		<lens>40.0</lens>
+		<cat>asch 0.75</cat>
+		<predict>asch 0.75</predict>
+		<x>19925974</x>
+		<y>5294720</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<conf>0.75</conf>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#FFA500">
+			<measuretype>3</measuretype>
+			<pointlist>
+				<point>
+					<x>19893923</x>
+					<y>5260569</y>
+				</point>
+				<point>
+					<x>19893923</x>
+					<y>5328870</y>
+				</point>
+				<point>
+					<x>19958024</x>
+					<y>5328870</y>
+				</point>
+				<point>
+					<x>19958024</x>
+					<y>5260569</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<closed>1</closed>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="90">
+		<title>Report</title>
+		<details/>
+		<coordformat>nanometers</coordformat>
+		<lens>40.000000</lens>
+		<x>22251742</x>
+		<y>-1199279</y>
+		<z>0</z>
+		<showtitle>0</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#ff0000">
+			<measuretype>0</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>22048386</x>
+					<y>-1317424</y>
+				</point>
+				<point>
+					<x>22048386</x>
+					<y>-1080029</y>
+				</point>
+				<point>
+					<x>22463718</x>
+					<y>-1080029</y>
+				</point>
+				<point>
+					<x>22463718</x>
+					<y>-1317424</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+	</ndpviewstate>
+	<ndpviewstate id="91">
+		<title>Report</title>
+		<details/>
+		<coordformat>nanometers</coordformat>
+		<lens>40.000000</lens>
+		<x>18181098</x>
+		<y>1212028</y>
+		<z>0</z>
+		<showtitle>0</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#ff0000">
+			<measuretype>0</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>17981280</x>
+					<y>1094325</y>
+				</point>
+				<point>
+					<x>17981280</x>
+					<y>1331278</y>
+				</point>
+				<point>
+					<x>18393074</x>
+					<y>1331278</y>
+				</point>
+				<point>
+					<x>18393074</x>
+					<y>1094325</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+	</ndpviewstate>
+</annotations>
+
