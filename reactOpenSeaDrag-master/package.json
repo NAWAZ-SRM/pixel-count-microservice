@@ -1,0 +1,71 @@
+{
+  "name": "openseadragon",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/material": "^5.16.0",
+    "@openseadragon-imaging/openseadragon-imaginghelper": "^2.2.2",
+    "@recogito/annotorious-openseadragon": "^2.7.17",
+    "@recogito/annotorious-shape-labels": "^0.2.3",
+    "@samvera/clover-iiif": "^2.3.2",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@trendmicro/react-sidenav": "^0.5.0",
+    "axios": "^1.7.7",
+    "bootstrap": "^5.3.2",
+    "chart.js": "^4.4.3",
+    "fabric": "^5.3.0",
+    "lightgallery": "^2.7.2",
+    "openseadragon": "^4.1.1",
+    "openseadragon-filtering": "^1.0.0",
+    "primereact": "^10.6.6",
+    "react": "^18.2.0",
+    "react-awesome-slider": "^4.1.0",
+    "react-bootstrap": "^2.10.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-contextmenu": "^2.14.0",
+    "react-d3-tree": "^3.6.2",
+    "react-datepicker": "^6.9.0",
+    "react-device-detect": "^2.2.3",
+    "react-dom": "^18.2.0",
+    "react-draggable": "^4.4.6",
+    "react-grid-gallery": "^1.0.1",
+    "react-mindmap": "^2.1.6",
+    "react-paginate": "^8.2.0",
+    "react-photo-gallery": "^8.0.0",
+    "react-responsive-carousel": "^3.2.23",
+    "react-router-dom": "^6.26.2",
+    "react-scripts": "5.0.1",
+    "react-select": "^5.8.0",
+    "react-sliding-pane": "^7.3.0",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

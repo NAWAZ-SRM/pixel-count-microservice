@@ -1,0 +1,13 @@
+[project]
+name = "maharshi-flask-app"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "flask>=3.1.0",
+    "flask-cors>=5.0.0",
+    "numpy>=2.2.2",
+    "openslide-bin>=4.0.0.6",
+    "openslide-python>=1.4.1",
+]
