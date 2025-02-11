@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, forwardRef } from "react";
 import OpenSeadragon from "openseadragon";
 import * as Annotorious from "@recogito/annotorious-openseadragon";
 import "@recogito/annotorious-openseadragon/dist/annotorious.min.css";
@@ -14,7 +14,19 @@ import './openseadragon-filtering.js'
 
 import { Row, Col } from "react-bootstrap";
 
-const DeepZoomViewer = ({ tileSources, zoomLevel, xCoord, yCoord, annotDetArr, imageSettings, setViewer2, Doctor, tileName, widthTile, heightTile }) => {
+const DeepZoomViewer = forwardRef(({ 
+  tileSources, 
+  zoomLevel, 
+  xCoord, 
+  yCoord, 
+  annotDetArr, 
+  imageSettings, 
+  setViewer2, 
+  Doctor, 
+  tileName, 
+  widthTile, 
+  heightTile 
+}, ref) =>  {
   const viewerRef = useRef();
 
 
@@ -57,7 +69,10 @@ const DeepZoomViewer = ({ tileSources, zoomLevel, xCoord, yCoord, annotDetArr, i
       ajaxWithCredentials: false, // Add this line
       crossOriginPolicy: "Anonymous", // And this line
       // toolbar:       "toolbarDiv"   
-      showNavigator: true
+      showNavigator: true,
+      canvasOptions: {
+        willReadFrequently: true
+    }
 
     });
 
@@ -468,6 +483,6 @@ const DeepZoomViewer = ({ tileSources, zoomLevel, xCoord, yCoord, annotDetArr, i
       </div>
     </div>
   );
-};
+});
 
 export default DeepZoomViewer;

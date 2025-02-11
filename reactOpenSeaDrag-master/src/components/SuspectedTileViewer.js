@@ -522,8 +522,8 @@ const SuspectedTileViewer = () => {
   const [scaleSelected, setScaleSelected] = useState(false);
   const [gamma, setGamma] = useState(1);
   const [contrast, setContrast] = useState(100);
-  const [brightness, setBrightness] = useState(50);
-  const [saturation, setSaturation] = useState(80);
+  const [brightness, setBrightness] = useState(100);
+  const [saturation, setSaturation] = useState(100);
   const [imageSettings, setImageSettings] = useState(`brightness(${brightness}%) contrast(${contrast}%) saturate(${saturation}%)`);
   const [viewer, setViewer] = useState('');
   const [widthTile, setWidthTile] = useState();
@@ -572,7 +572,7 @@ const SuspectedTileViewer = () => {
         id: x.id,
         src: `http://localhost:5000/get_image/${Doctor}/${tileName}/${x.id}`,
         alt: x.title,
-        zoom: 64,
+        zoom: 49,
         x: x.openSeaXCoord,
         y: x.openSeaYCoord,
         annotation: x.title,
@@ -591,7 +591,7 @@ const SuspectedTileViewer = () => {
 
       let newImgArr = [];
       let noCalls = Math.floor(imagesArr.length / 12);
-      for (let i = 0; i < noCalls; i++) {
+      for (let i = 0; i < 2; i++) {
         let Images20 = imagesArr.slice(i * 12, (i + 1) * 12);
         let listImages = await Promise.all(Images20.map(images =>
           util.fetchData(`get_image/${Doctor}/${tileName}/${images.id}`, 'GET', 'image/jpeg')
