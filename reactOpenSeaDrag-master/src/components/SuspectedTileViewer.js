@@ -754,24 +754,24 @@ const SuspectedTileViewer = () => {
               </button>
             </DialogActions>
           </Dialog>
-    
+         
           {/* Sidebar */}
-          <div className="w-48 bg-white shadow-lg flex-shrink-0 overflow-y-auto">
-            <div className="flex flex-col h-full p-4 space-y-4">
+          <div className="w-40 bg-white shadow-lg flex-shrink-0 overflow-hidden">
+            <div className="flex flex-col h-full p-3 space-y-3">
               {/* Fullscreen button */}
               <button 
                 onClick={toggleFullScreen}
                 className="flex items-center space-x-2 p-2 hover:bg-blue-50 rounded-md transition-colors"
               >
-                <img src={fullScreenIcon} className="w-6 h-6" alt="Full Screen" />
-                <span className="text-gray-700">Full Screen</span>
+                <img src={fullScreenIcon} className="w-5 h-5" alt="Full Screen" />
+                <span className="text-gray-700 text-sm">Full Screen</span>
               </button>
-    
+
               {/* Grid dimensions */}
               <div className="space-y-2">
                 <div className="flex items-center space-x-2 p-2">
-                  <img src={gridIcon} className="w-6 h-6" alt="Adjust Dimension" />
-                  <span className="text-gray-700">Grid Size</span>
+                  <img src={gridIcon} className="w-5 h-5" alt="Adjust Dimension" />
+                  <span className="text-gray-700 text-sm">Grid Size</span>
                 </div>
                 <div className="flex space-x-2 px-2">
                   <input
@@ -786,7 +786,7 @@ const SuspectedTileViewer = () => {
                       setGridx(newGridx);
                       setItemsPerPage(newGridx * gridy);
                     }}
-                    className="w-20 p-1 border border-gray-300 rounded-md"
+                    className="w-16 p-1 border border-gray-300 rounded-md text-xs"
                   />
                   <input
                     type="number"
@@ -800,147 +800,134 @@ const SuspectedTileViewer = () => {
                       setGridy(newGridy);
                       setItemsPerPage(gridx * newGridy);
                     }}
-                    className="w-20 p-1 border border-gray-300 rounded-md"
+                    className="w-16 p-1 border border-gray-300 rounded-md text-xs"
                   />
                 </div>
               </div>
-    
+
               {/* Navigation buttons */}
               <div className="flex justify-between px-2">
                 <button
                   onClick={() => handlePageClick(currentPage - 1)}
                   className="p-2 hover:bg-blue-50 rounded-md transition-colors"
                 >
-                  <img src={prevIcon} className="w-6 h-6" alt="Previous Page" />
+                  <img src={prevIcon} className="w-5 h-5" alt="Previous Page" />
                 </button>
                 <button
                   onClick={() => handlePageClick(currentPage + 1)}
                   className="p-2 hover:bg-blue-50 rounded-md transition-colors"
                 >
-                  <img src={nextIcon} className="w-6 h-6" alt="Next Page" />
+                  <img src={nextIcon} className="w-5 h-5" alt="Next Page" />
                 </button>
               </div>
-    
+
               {/* Image controls */}
-              <div className="space-y-4">
+              <button
+                onClick={() => setScaleSelected(!scaleSelected)}
+                className="flex items-center space-x-2 p-2 hover:bg-blue-50 rounded-md transition-colors w-full"
+              >
+                <img src={measureIcon} className="w-5 h-5" alt="Enable Measure" />
+                <span className="text-gray-700 text-sm">Enable Measure</span>
+              </button>
+
+              {/* Image adjustment controls */}
+              <div className="space-y-2 p-2">
                 <button
-                  onClick={() => setScaleSelected(!scaleSelected)}
-                  className="flex items-center space-x-2 p-2 hover:bg-blue-50 rounded-md transition-colors w-full"
+                  onClick={resetFilters}
+                  className="w-full px-3 py-1 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors text-xs"
                 >
-                  <img src={measureIcon} className="w-6 h-6" alt="Enable Measure" />
-                  <span className="text-gray-700">Enable Measure</span>
+                  Reset Filters
                 </button>
-    
-                {/* Image adjustment controls */}
-                <div className="space-y-4 p-2">
-                  <button
-                    onClick={resetFilters}
-                    className="w-full px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
-                  >
-                    Reset Filters
-                  </button>
-                  
-                  <div className="space-y-2">
-                    <div className="space-y-1">
-                      <label className="text-sm text-gray-600">Brightness ({brightness}%)</label>
-                      <input
-                        type="range"
-                        min="0"
-                        max="200"
-                        value={brightness}
-                        onChange={updateFilterBrigtness}
-                        className="w-full"
-                      />
-                    </div>
-                    
-                    <div className="space-y-1">
-                      <label className="text-sm text-gray-600">Contrast ({contrast}%)</label>
-                      <input
-                        type="range"
-                        min="0"
-                        max="200"
-                        value={contrast}
-                        onChange={updateFilterContrast}
-                        className="w-full"
-                      />
-                    </div>
-                    
-                    <div className="space-y-1">
-                      <label className="text-sm text-gray-600">Gamma ({gamma})</label>
-                      <input
-                        type="range"
-                        min="0"
-                        max="2"
-                        step="0.1"
-                        value={gamma}
-                        onChange={updateFilterGamma}
-                        className="w-full"
-                      />
-                    </div>
-                    
-                    <div className="space-y-1">
-                      <label className="text-sm text-gray-600">Saturation ({saturation}%)</label>
-                      <input
-                        type="range"
-                        min="0"
-                        max="200"
-                        value={saturation}
-                        onChange={updateFilterSaturation}
-                        className="w-full"
-                      />
-                    </div>
-                  </div>
+                
+                <div className="space-y-1">
+                  <label className="text-xs text-gray-600">Brightness ({brightness}%)</label>
+                  <input
+                    type="range"
+                    min="0"
+                    max="200"
+                    value={brightness}
+                    onChange={updateFilterBrigtness}
+                    className="w-full"
+                  />
+                </div>
+                
+                <div className="space-y-1">
+                  <label className="text-xs text-gray-600">Contrast ({contrast}%)</label>
+                  <input
+                    type="range"
+                    min="0"
+                    max="200"
+                    value={contrast}
+                    onChange={updateFilterContrast}
+                    className="w-full"
+                  />
+                </div>
+                
+                <div className="space-y-1">
+                  <label className="text-xs text-gray-600">Gamma ({gamma})</label>
+                  <input
+                    type="range"
+                    min="0"
+                    max="2"
+                    step="0.1"
+                    value={gamma}
+                    onChange={updateFilterGamma}
+                    className="w-full"
+                  />
+                </div>
+                
+                <div className="space-y-1">
+                  <label className="text-xs text-gray-600">Saturation ({saturation}%)</label>
+                  <input
+                    type="range"
+                    min="0"
+                    max="200"
+                    value={saturation}
+                    onChange={updateFilterSaturation}
+                    className="w-full"
+                  />
                 </div>
               </div>
-    
+
               {/* Page navigation */}
-              <div className="mt-auto">
-                <div className="text-center text-gray-700">
-                  Page {currentPage} of {Math.ceil(images.length / itemsPerPage)}
-                </div>
+              <div className="mt-auto text-center text-gray-700 text-xs">
+                Page {currentPage} of {Math.ceil(images.length / itemsPerPage)}
               </div>
             </div>
           </div>
     
           {/* Main content with image grid */}
-          <div className="flex-1 p-1"> {/* Minimal padding */}
-          <div className="h-[calc(100vh-2rem)]"> {/* Subtract header height */}
-            <div 
-              className="grid gap-1 h-full" /* Minimal gap */
-              style={{
-                gridTemplateColumns: `repeat(${gridx}, 1fr)`,
-                gridTemplateRows: `repeat(${gridy}, 1fr)`,
-                height: '100%',
-                minHeight: '0', // Important for grid sizing
-                overflow: 'hidden' // Prevent scrolling
-              }}
-            >
-              {currentItems.map((image, index) => (
-                <div key={index} className="relative group rounded overflow-hidden shadow-sm h-full"> 
-                  <ContextMenu model={items} ref={cm} />
-                  <img
-                    className={`w-full h-full object-cover ${
-                      scaleSelected ? 'cursor-crosshair' : 'cursor-pointer'
-                    }`}
-                    style={{ objectFit: 'cover' }}
-                    src={image.src2}
-                    alt={image.title}
-                    onClick={() => handleImageClick(image.zoom, image.x, image.y, image.annotation)}
-                    onContextMenu={(event) => onRightClick(event, image.id)}
-                  />
-                  <div className="absolute top-0.5 left-0.5 bg-black bg-opacity-50 text-white px-1 py-0.5 rounded text-xs">
-                    {image.title}
-                  </div>
-                  {image.cat !== "none" && (
-                    <div className="absolute bottom-0.5 left-0.5 bg-black bg-opacity-50 text-white px-1 py-0.5 rounded text-xs">
-                      {image.cat}
-                    </div>
-                  )}
+          <div 
+            className="grid flex-grow ml-2 p-4"
+            style={{
+              gridTemplateColumns: `repeat(${gridx}, 1fr)`,
+              gridTemplateRows: `repeat(${gridy}, 1fr)`,
+              height: "calc(100vh - 50px)" // Adjusted for better viewport
+            }}
+          >
+            {currentItems.map((image, index) => (
+              <div key={index} className="relative group rounded-lg overflow-hidden shadow-md">
+                <ContextMenu model={items} ref={cm} />
+                <img
+                  className={`w-full h-full object-cover rounded-lg ${scaleSelected ? 'cursor-crosshair' : 'cursor-pointer'}`}
+                  src={image.src2}
+                  alt={image.title}
+                  onClick={() => handleImageClick(image.zoom, image.x, image.y, image.annotation)}
+                  onContextMenu={(event) => onRightClick(event, image.id)}
+                />
+                <div className="absolute top-2 left-2 bg-black bg-opacity-50 text-white p-1 rounded-md text-xs">
+                  {image.title}
                 </div>
-              ))}
-            </div>
+                {image.cat !== "none" && (
+                  <div className="absolute bottom-2 left-2 bg-black bg-opacity-50 text-white p-1 rounded-md text-xs">
+                    {image.cat}
+                  </div>
+                )}
+              </div>
+            ))}
           </div>
-        </div>
+
+
     
           {/* Sliding pane */}
           <SlidingPane
