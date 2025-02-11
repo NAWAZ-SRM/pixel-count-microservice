@@ -44,15 +44,17 @@ function App() {
     const doctorData = async function () {
       let data = await fetchData('getDoctors');
       setDoctorAndReport(data);
+      console.log(data)
     }
 
     doctorData();
+    console.log(doctorData());
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col bg-gray-100">
-      <header className="bg-white shadow py-4">
-        <div className="container mx-auto text-center text-gray-800 text-2xl font-semibold">
+    <div className="min-h-screen flex flex-col bg-blue-50">
+      <header className="bg-blue-600 text-white shadow py-4">
+        <div className="container mx-auto text-center text-2xl font-semibold">
           Clinical Slide Viewer
         </div>
       </header>
@@ -67,14 +69,14 @@ function App() {
           </BrowserRouter>
         ) : (
           <div className="flex flex-col items-center justify-center space-y-4">
-            <div className="text-gray-600 text-lg">
+            <div className="text-blue-600 text-lg">
               Loading data...
             </div>
-            <div className="loader ease-linear rounded-full border-4 border-t-4 border-gray-200 h-12 w-12"></div>
+            <div className="loader ease-linear rounded-full border-4 border-t-4 border-blue-200 h-12 w-12"></div>
           </div>
         )}
       </main>
-      <footer className="bg-gray-200 text-gray-600 py-4 text-center">
+      <footer className="bg-blue-600 text-white py-4 text-center">
         <div className="container mx-auto">
           &copy; 2025 Vyuhaa Clinical Slide Viewer. All rights reserved.
         </div>
