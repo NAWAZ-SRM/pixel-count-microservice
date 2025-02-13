@@ -591,7 +591,7 @@ const SuspectedTileViewer = () => {
 
       let newImgArr = [];
       let noCalls = Math.floor(imagesArr.length / 12);
-      for (let i = 0; i < 2; i++) {
+      for (let i = 0; i < 3; i++) {
         let Images20 = imagesArr.slice(i * 12, (i + 1) * 12);
         let listImages = await Promise.all(Images20.map(images =>
           util.fetchData(`get_image/${Doctor}/${tileName}/${images.id}`, 'GET', 'image/jpeg')
@@ -729,7 +729,7 @@ const SuspectedTileViewer = () => {
 
  
   return (
-      <div className="flex flex-col h-screen bg-blue-50">
+      <div className="flex flex-col h-screen w-screen bg-blue-50">
         {/* Main content area */}
         <div className="flex flex-1 overflow-hidden">
           {/* Dialog */}
