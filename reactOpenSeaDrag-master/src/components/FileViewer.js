@@ -24,7 +24,7 @@ const FileViewer = (doctorData) => {
   };
 
   const fetchData = async (pathT) => {
-    const path = `http://localhost:5000/${pathT}`;
+    const path = `http://34.28.249.83:5000/${pathT}`;
     return new Promise((resolve, reject) => {
       fetch(path, {
         method: 'GET',

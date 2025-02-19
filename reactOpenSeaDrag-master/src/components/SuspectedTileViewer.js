@@ -570,7 +570,7 @@ const SuspectedTileViewer = () => {
 
       let imagesArr = annotDet.Predicts.map(x => ({
         id: x.id,
-        src: `http://localhost:5000/get_image/${Doctor}/${tileName}/${x.id}`,
+        src: `http://34.28.249.83:5000/get_image/${Doctor}/${tileName}/${x.id}`,
         alt: x.title,
         zoom: 49,
         x: x.openSeaXCoord,

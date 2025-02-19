@@ -40,7 +40,7 @@ const FreqIntGraph = ({ min, max, step, onChange }) => {
 
         setLoading(true);
 
-        axios.post('http://localhost:5000/upload-image', formData, {
+        axios.post('http://34.28.249.83:5000/upload-image', formData, {
             headers: {
                 'Content-Type': 'multipart/form-data'
             }

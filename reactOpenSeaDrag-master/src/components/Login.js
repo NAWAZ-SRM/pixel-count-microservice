@@ -8,7 +8,7 @@ const Login = () => {
     const handleLogin = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post("http://127.0.0.1:8000/api/token/", {
+            const response = await axios.post("http://34.28.249.83:8000/api/token/", {
                 username,
                 password
             });
