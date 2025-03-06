@@ -1,3 +1,5 @@
+# pixel_counter/settings.py
+
 """
 Django settings for pixel_counter project.
 
@@ -10,15 +12,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
-# from pathlib import Path
-# import os
-# # Build paths inside the project like this: BASE_DIR / 'subdir'.
-# BASE_DIR = Path(__file__).resolve().parent.parent
-# STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
-# STATICFILES_DIRS = [
-#     BASE_DIR / "static",  # Your existing static folder (images for OpenSeadragon)
-#     os.path.join(BASE_DIR, "image_processor", "frontend", "static"),  # React static files
-# ]
 from pathlib import Path
 import os
 
@@ -71,29 +64,9 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'pixel_counter.urls'
 
-# TEMPLATES = [
-#     {
-#         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-#         'DIRS': [os.path.join(BASE_DIR, "image_processor", "frontend")],
-#         'APP_DIRS': True,
-#         'OPTIONS': {
-#             'context_processors': [
-#                 'django.template.context_processors.debug',
-#                 'django.template.context_processors.request',
-#                 'django.contrib.auth.context_processors.auth',
-#                 'django.contrib.messages.context_processors.messages',
-#             ],
-#         },
-#     },
-# ]
-
-# Allow React's `index.html` to be used as a template
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [
-            BASE_DIR / "image_processor" / "frontend" / "build"
-        ],  # React build folder
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

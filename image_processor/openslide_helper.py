@@ -1,3 +1,5 @@
+# image_processor/openslide_helper.py
+
 import os
 import openslide
 import math

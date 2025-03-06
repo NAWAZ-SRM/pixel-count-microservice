@@ -1,3 +1,6 @@
+# pixel_counter/urls.py
+
+
 """URL configuration for pixel_counter project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -18,14 +21,16 @@ from django.urls import include, path
 from django.shortcuts import redirect
 from django.contrib import admin
 from django.views.generic import TemplateView
-from image_processor.views import frontend_view 
+from image_processor.views import frontend_view
 from django.conf import settings
 from django.conf.urls.static import static
+
+
 def redirect_to_login(request):
     return redirect("/api/login/")
+
+
 urlpatterns = [
-    #path("", redirect_to_login),
-    #path("api/", include("image_processor.urls")),
     path('api/', include('image_processor.urls')),  # API routes
     path("", frontend_view, name='frontend'),
 ]
