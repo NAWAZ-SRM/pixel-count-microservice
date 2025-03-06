@@ -104,7 +104,7 @@ function App() {
 
   useEffect(() => {
     const fetchData = async (pathT) => {
-      const path = `http://localhost:5000/${pathT}`;
+      const path = `http://localhost:8000/${pathT}`;
       const method = 'GET';
       const body = {};
 

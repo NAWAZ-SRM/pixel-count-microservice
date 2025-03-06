@@ -177,7 +177,7 @@
 
 
 # def get_annotations(request):
-    
+
 #     ndpa_file_path = os.path.join(settings.BASE_DIR, 'static', 'images', 'test.ndpa')
 
 #     if not os.path.exists(ndpa_file_path):
@@ -194,26 +194,22 @@
 #     return JsonResponse({'annotations': annotations})
 
 
-
-
-
-
 # # def view_bnc_adjusted_image(request, image_name):
-    
+
 # #     image_path = os.path.join(settings.BASE_DIR, 'static', 'images', f'{image_name}.ndpi')
-    
+
 # #     if not os.path.exists(image_path):
 # #         return HttpResponse("Image not found", status=404)
 
-    
+
 # #     slide = openslide.OpenSlide(image_path)
 
-    
+
 # #     width, height = slide.dimensions
 
 # #     # Optionally, you can extract a region of the image to handle memory issues
 # #     # For example, extract the whole image at level 0 (original resolution)
-# #     #GPT idea da 
+# #     #GPT idea da
 # #     img = np.array(slide.read_region((0, 0), 0, (width, height)))
 
 # #     # Convert the image to grayscale if it's RGBA or RGB
@@ -240,26 +236,26 @@
 #     New API endpoint that reads annotations uding xml logic
 #     """
 #     ndpa_file_path = os.path.join(settings.BASE_DIR, 'static', 'images', 'test1.ndpa')
-    
+
 #     if not os.path.exists(ndpa_file_path):
 #         return JsonResponse({'error': 'NDPA file not found'}, status=404)
-    
+
 #     try:
 #         tree = ET.parse(ndpa_file_path)
 #         root = tree.getroot()
 #     except Exception as e:
 #         return JsonResponse({'error': f'Error parsing NDPA file: {str(e)}'}, status=500)
-    
+
 #     annotations = []
-    
+
 #     for annotation in root.findall('ndpviewstate'):
 #         title_elem = annotation.find('title')
 #         title = title_elem.text if title_elem is not None else ''
-        
+
 #         # Get the color from the XML, or default to red if not provided.
 #         color_elem = annotation.find('color')
 #         color = color_elem.text if color_elem is not None else "red"
-        
+
 #         pointlist = annotation.find('pointlist')
 #         if pointlist is not None:
 #             x_vals = []
@@ -278,7 +274,7 @@
 #                 x2 = max(x_vals)
 #                 y1 = min(y_vals)
 #                 y2 = max(y_vals)
-                
+
 #                 annotations.append({
 #                     'title': title,
 #                     'x': x1,
@@ -287,13 +283,12 @@
 #                     'height': y2 - y1,
 #                     'color': color,
 #                 })
-    
+
 #     return JsonResponse({'annotations': annotations})
 
 
 # def frontend_view(request):
 #     return render(request, "index.html")
-
 
 
 from io import BytesIO
@@ -319,6 +314,7 @@ from django.http import FileResponse
 IMAGE_DIR = os.path.join("static", "images")
 
 # ================== API Endpoints ==================
+
 
 @login_required
 def list_images(request):
@@ -346,7 +342,9 @@ def get_selected_image(request):
 
 def session_timer(request):
     if not request.user.is_authenticated:
-        return JsonResponse({"expired": True, "message": "Session expired, please log in."}, status=401)
+        return JsonResponse(
+            {"expired": True, "message": "Session expired, please log in."}, status=401
+        )
 
     time_left = request.session.get_expiry_age()
     return JsonResponse({"expired": time_left <= 0, "time_left": time_left})
@@ -381,7 +379,9 @@ def get_annotations(request):
         try:
             annotations = json.load(file)
         except json.JSONDecodeError:
-            return JsonResponse({'error': 'Invalid JSON format in annotations file'}, status=400)
+            return JsonResponse(
+                {'error': 'Invalid JSON format in annotations file'}, status=400
+            )
 
     return JsonResponse({'annotations': annotations})
 
@@ -402,8 +402,16 @@ def get_annotations_xml(request):
     annotations = []
 
     for annotation in root.findall('ndpviewstate'):
-        title = annotation.find('title').text if annotation.find('title') is not None else ''
-        color = annotation.find('color').text if annotation.find('color') is not None else "red"
+        title = (
+            annotation.find('title').text
+            if annotation.find('title') is not None
+            else ''
+        )
+        color = (
+            annotation.find('color').text
+            if annotation.find('color') is not None
+            else "red"
+        )
 
         pointlist = annotation.find('pointlist')
         if pointlist is not None:
@@ -416,19 +424,22 @@ def get_annotations_xml(request):
                     continue
 
             if x_vals and y_vals:
-                annotations.append({
-                    'title': title,
-                    'x': min(x_vals),
-                    'y': min(y_vals),
-                    'width': max(x_vals) - min(x_vals),
-                    'height': max(y_vals) - min(y_vals),
-                    'color': color,
-                })
+                annotations.append(
+                    {
+                        'title': title,
+                        'x': min(x_vals),
+                        'y': min(y_vals),
+                        'width': max(x_vals) - min(x_vals),
+                        'height': max(y_vals) - min(y_vals),
+                        'color': color,
+                    }
+                )
 
     return JsonResponse({'annotations': annotations})
 
 
 # ================== Authentication Views ==================
+
 
 def login_view(request):
     if request.method == "POST":
@@ -471,11 +482,12 @@ def register_view(request):
 
 
 def frontend_view(request):
-    index_path = os.path.join(settings.BASE_DIR, "image_processor", "frontend","build" , "index.html")
-    
+    index_path = os.path.join(settings.BASE_DIR, "static", "frontend", "index.html")
+
     if os.path.exists(index_path):
         with open(index_path, "r") as file:
             return HttpResponse(file.read())
     else:
-        return HttpResponseNotFound("React frontend not found. Build it using 'npm run build'")
-    
+        return HttpResponseNotFound(
+            "React frontend not found. Build it using 'npm run build'"
+        )

@@ -14,7 +14,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 # import os
 # # Build paths inside the project like this: BASE_DIR / 'subdir'.
 # BASE_DIR = Path(__file__).resolve().parent.parent
-# STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles") 
+# STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 # STATICFILES_DIRS = [
 #     BASE_DIR / "static",  # Your existing static folder (images for OpenSeadragon)
 #     os.path.join(BASE_DIR, "image_processor", "frontend", "static"),  # React static files
@@ -27,14 +27,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Serve static files properly
 STATIC_URL = "/static/"
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
-
 STATICFILES_DIRS = [
-    BASE_DIR / "static",  # Existing static files (for OpenSeadragon images)
-    BASE_DIR / "image_processor" / "frontend" / "build" / "static",  # React static files (CSS, JS)
-    BASE_DIR / "image_processor" / "frontend" / "build",  # To include manifest.json and index.html
+    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, "static/frontend"),
 ]
 STATICFILES_STORAGE = "django.contrib.staticfiles.storage.StaticFilesStorage"
-
 
 
 # Quick-start development settings - unsuitable for production
@@ -94,7 +91,9 @@ ROOT_URLCONF = 'pixel_counter.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / "image_processor" / "frontend" / "build"],  # React build folder
+        'DIRS': [
+            BASE_DIR / "image_processor" / "frontend" / "build"
+        ],  # React build folder
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
