@@ -8,3 +8,4 @@ uv.lock
 openslide-python
 static/images/test.ndpi
 staticfiles
+static
