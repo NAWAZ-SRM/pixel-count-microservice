@@ -1,3 +1,5 @@
+// Reactopenseadrag-Master/src/component/DeepZoomViewer.js
+
 import React, { useEffect, useRef, useState, forwardRef } from "react";
 import OpenSeadragon from "openseadragon";
 import * as Annotorious from "@recogito/annotorious-openseadragon";
