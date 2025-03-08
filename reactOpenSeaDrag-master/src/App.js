@@ -16,7 +16,7 @@ function App() {
 
   useEffect(() => {
     const fetchData = async (pathT) => {
-      const path = `http://127.0.0.1:8000/${pathT}`;
+      const path = `http://127.0.0.1:8000/api/${pathT}`;
       const method = 'GET';
       const body = {};
 
@@ -43,15 +43,19 @@ function App() {
       });
     }
 
-    const doctorData = async function () {
-      let data = await fetchData('getDoctors');
-      setDoctorAndReport(data);
-      console.log(data)
-    }
+    const doctorData = async () => {
+      try {
+          const data = await fetchData('getDoctors');
+          setDoctorAndReport(data.doctors); // Set the array, not the object
+          console.log('Set doctorAndReport:', data.doctors);
+      } catch (error) {
+          console.error('doctorData Error:', error);
+          setDoctorAndReport([]); // Fallback to empty array
+      }
+  };
 
-    doctorData();
-    console.log(doctorData());
-  }, []);
+  doctorData();
+}, []);
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-10 bg-blue-50">

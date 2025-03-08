@@ -90,12 +90,13 @@ const SuspectedTileViewer = () => {
 
     const setupScreen = async () => {
       let annotDet = await util.fetchData(`tileSlide/${Doctor}/${tileName}`, 'GET', 'application/json');
-      setWidthTile(annotDet.tileDeatil.width);
-      setHeightTile(annotDet.tileDeatil.height);
+      console.log('tileSlide Response:', annotDet);
+      setWidthTile(annotDet.tileDetail.width);
+      setHeightTile(annotDet.tileDetail.height);
 
       let imagesArr = annotDet.Predicts.map(x => ({
         id: x.id,
-        src: `http://127.0.0.1:8000/get_image/${Doctor}/${tileName}/${x.id}`,
+        src: `http://127.0.0.1:8000/api/get_image/${Doctor}/${tileName}/${x.id}`,
         alt: x.title,
         zoom: 49,
         x: x.openSeaXCoord,

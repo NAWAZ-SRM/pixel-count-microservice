@@ -1,38 +1,4 @@
-# import os
-# import openslide
-# from django.conf import settings
-# from django.http import JsonResponse, FileResponse
-
-# ROOT_DIR = os.path.join(settings.BASE_DIR, 'static')
-
-# def tile_slide(doctor, tile_slide):
-#     """Fetch OpenSlide tile slide data."""
-#     slide_path = os.path.join(ROOT_DIR, 'tiles', 'Doctors', doctor, tile_slide)
-
-#     if not os.path.exists(slide_path):
-#         return JsonResponse({"error": "Tile slide not found"}, status=404)
-
-#     slide = openslide.OpenSlide(slide_path)
-#     return JsonResponse({"slide_info": slide.properties})
-
-# def get_image(doctor, tile_slide, annot_no):
-#     """Retrieve an image for a specific annotation."""
-#     image_path = os.path.join(ROOT_DIR, 'tiles', 'Doctors', doctor, tile_slide, f"annot_{annot_no}.jpeg")
-
-#     if os.path.exists(image_path):
-#         return FileResponse(open(image_path, 'rb'), content_type='image/jpeg')
-    
-#     return JsonResponse({"error": "Image not found"}, status=404)
-
-# def get_tile(doctor, tile_name, level, row, col):
-#     """Serve OpenSlide tile as an image response."""
-#     tile_path = os.path.join(ROOT_DIR, 'tiles', 'Doctors', doctor, tile_name, f"{level}_{row}_{col}.jpeg")
-
-#     if os.path.exists(tile_path):
-#         return FileResponse(open(tile_path, 'rb'), content_type='image/jpeg')
-
-#     return JsonResponse({"error": "Tile not found"}, status=404)
-
+# image_processor/openSlide.py
 
 import os
 import json
@@ -42,9 +8,12 @@ import numpy as np
 from io import BytesIO
 from django.http import HttpResponse
 import openslide
+from django.conf import settings
+
 
 # Define the root directory dynamically
-ROOT_DIR = os.path.join(os.path.dirname(__file__), "../../static")
+ROOT_DIR = os.path.join(settings.BASE_DIR, 'static', 'images', 'tiles', 'Doctors')
+
 
 def initiateTile(Doctor, Patient):
     """
@@ -58,14 +27,13 @@ def initiateTile(Doctor, Patient):
         OpenSlide object, width, and height of the slide.
     """
     tileName = f"{Patient}.ndpi"
-    slide_path = os.path.join(ROOT_DIR, 'images')
-
+    slide_path = os.path.join(ROOT_DIR, Doctor, Patient, tileName)
     if not os.path.exists(slide_path):
         raise FileNotFoundError(f"Slide file not found: {slide_path}")
-
     slide = openslide.OpenSlide(slide_path)
     width, height = slide.dimensions
     return slide, width, height
+
 
 def tileSlide(Doctor, tileSlide):
     """
@@ -89,22 +57,25 @@ def tileSlide(Doctor, tileSlide):
         openSeaXCoord = (1 / width) * left
         openSeaYCoord = (1 / height) * top
 
-        predictArr.append({
-            "id": id,
-            "title": title,
-            "x1": x1,
-            "y1": y1,
-            "x2": x2,
-            "y2": y2,
-            "cat": cat,
-            "left": left,
-            "top": top,
-            "openSeaXCoord": openSeaXCoord,
-            "openSeaYCoord": openSeaYCoord
-        })
+        predictArr.append(
+            {
+                "id": id,
+                "title": title,
+                "x1": x1,
+                "y1": y1,
+                "x2": x2,
+                "y2": y2,
+                "cat": cat,
+                "left": left,
+                "top": top,
+                "openSeaXCoord": openSeaXCoord,
+                "openSeaYCoord": openSeaYCoord,
+            }
+        )
 
     tileDetail = {"width": width, "height": height}
     return {"Predicts": predictArr, "tileDetail": tileDetail}
+
 
 def get_image(Doctor, tileSlide, annotNo):
     """
@@ -134,6 +105,7 @@ def get_image(Doctor, tileSlide, annotNo):
     output = BytesIO()
     tile.save(output, format='JPEG')
     return HttpResponse(output.getvalue(), content_type="image/jpeg")
+
 
 def tile(Doctor, tileName, level, row, col):
     """
@@ -166,7 +138,9 @@ def tile(Doctor, tileName, level, row, col):
         tile_width = int(tile_width / dividingFactor)
         tile_height = int(tile_height / dividingFactor)
 
-        tile = slide.read_region((row * 512 * tile_width, col * 512 * tile_height), zoomDiff, (512, 512))
+        tile = slide.read_region(
+            (row * 512 * tile_width, col * 512 * tile_height), zoomDiff, (512, 512)
+        )
         tile = tile.convert('RGB')
 
         output = BytesIO()
@@ -175,6 +149,7 @@ def tile(Doctor, tileName, level, row, col):
 
     except Exception as e:
         return HttpResponse(f"Error: {e}", status=500)
+
 
 def get_box_list(Doctor, tileSlide):
     """
@@ -189,7 +164,7 @@ def get_box_list(Doctor, tileSlide):
     """
     nm_p = 221
     tileName = f"{tileSlide}.ndpa"
-    ndpa_path = os.path.join(ROOT_DIR, 'tiles', 'Doctors', Doctor, tileSlide, tileName)
+    ndpa_path = os.path.join(ROOT_DIR, Doctor, tileSlide, tileName)
 
     if not os.path.exists(ndpa_path):
         raise FileNotFoundError(f"NDPA file not found: {ndpa_path}")
@@ -222,6 +197,7 @@ def get_box_list(Doctor, tileSlide):
 
     return box_list
 
+
 def get_reference(Doctor, tileName):
     """
     Get reference points for annotation alignment.
@@ -242,12 +218,17 @@ def get_reference(Doctor, tileName):
     ImageCenter_X = (w / 2) * nm_p
     ImageCenter_Y = (h / 2) * nm_p
 
-    OffSet_From_Image_Center_X = slide.properties.get('hamamatsu.XOffsetFromSlideCentre')
-    OffSet_From_Image_Center_Y = slide.properties.get('hamamatsu.YOffsetFromSlideCentre')
+    OffSet_From_Image_Center_X = slide.properties.get(
+        'hamamatsu.XOffsetFromSlideCentre'
+    )
+    OffSet_From_Image_Center_Y = slide.properties.get(
+        'hamamatsu.YOffsetFromSlideCentre'
+    )
 
     X_Ref = float(ImageCenter_X) - float(OffSet_From_Image_Center_X)
     Y_Ref = float(ImageCenter_Y) - float(OffSet_From_Image_Center_Y)
     return X_Ref, Y_Ref
+
 
 def get_bnc_adjusted(img, clip=12):
     """

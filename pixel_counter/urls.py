@@ -17,7 +17,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 
-from django.urls import include, path
+from django.urls import include, path, re_path
 from django.shortcuts import redirect
 from django.contrib import admin
 from django.views.generic import TemplateView
@@ -25,14 +25,9 @@ from image_processor.views import frontend_view
 from django.conf import settings
 from django.conf.urls.static import static
 
-
-def redirect_to_login(request):
-    return redirect("/api/login/")
-
-
 urlpatterns = [
     path('api/', include('image_processor.urls')),  # API routes
-    path("", frontend_view, name='frontend'),
+    path('', frontend_view, name='frontend'),
 ]
 
 if settings.DEBUG:
