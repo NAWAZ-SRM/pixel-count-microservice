@@ -1,6 +1,6 @@
 
 const fetchData = async (pathT, method, contentType) => {
-    const path = `http://localhost:5000/${pathT}`; // Replace with your API path
+    const path = `http://127.0.0.1:8000/${pathT}`; // Replace with your API path
     // const method = 'GET'; // Replace with your method
     const body = {}; // Replace with your body
 

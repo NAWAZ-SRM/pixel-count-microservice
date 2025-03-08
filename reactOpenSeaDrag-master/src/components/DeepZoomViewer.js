@@ -345,7 +345,7 @@ const DeepZoomViewer = forwardRef(({
   }, []);
 
   const getSavedAnnotation = async () => {
-    let savedData = await onFetchData('http://127.0.0.1:5000/getSavedAnnotation', 'GET',)
+    let savedData = await onFetchData('http://127.0.0.1:8000/getSavedAnnotation', 'GET',)
     return savedData;
   };
 
