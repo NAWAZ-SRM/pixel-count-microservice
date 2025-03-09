@@ -1,37 +1,37 @@
+# image_processor/urls.py
+
 from django.urls import path
 from .views import (
-    list_images,
-    store_image,
-    get_selected_image,
-    session_timer,
-    home,
-    login_view,
-    logout_view,
-    register_view,
-    open_slide,
-    view_image,
-    custom_404,
-    get_annotations,
-    # render_bnc_adjusted_view,
-    # view_bnc_adjusted_image,
-    get_annotations_xml,
+    get_doctors,
+    update_category,
+    delete_annotation,
+    update_annotation,
+    tile_slide,
+    get_image,
+    tile,
 )
 
 urlpatterns = [
-    path("list-images/", list_images, name="list_images"),
-    path("store-image/", store_image, name="store_image"),
-    path("get-selected-image/", get_selected_image, name="get_selected_image"),
-    path("session-timer/", session_timer, name="session_timer"),
-    path("", home, name="home"),
-    path("login/", login_view, name="login"),
-    path("logout/", logout_view, name="logout"),
-    path("register/", register_view, name="register"),
-    # path("open-slide/", open_slide, name="open_slide"),
-    path('open-slide/<int:level>/<int:row>/<int:col>/', open_slide, name='open_slide'),
-    path("view_image/", view_image, name="view_image"),
-    path("404/", custom_404, name="404"),
-    path("annotations/", get_annotations, name="get_annotations"),
-    # path('view_bnc_adjusted_image/<str:image_name>/', view_bnc_adjusted_image, name='view_bnc_adjusted_image'),
-    path('annotations-xml/', get_annotations_xml, name='annotations_xml'),
+    # OpenSeadragon API routes
+    path('tileSlide/<str:doctor>/<str:tile_slide>/', tile_slide, name='tile_slide'),
+    path(
+        'get_image/<str:doctor>/<str:tile_slide>/<str:annot_no>/',
+        get_image,
+        name='get_image',
+    ),
+    path(
+        'tile/<str:doctor>/<str:tile_name>/<int:level>/<int:row>_<int:col>.jpeg/',
+        tile,
+        name='tile',
+    ),
+    # Folder function routes
+    path('getDoctors/', get_doctors, name='get_doctors'),
+    # Annotation routes
+    path(
+        'updateCategory/<str:doctor>/<str:tile_name>/<str:annotation_id>/',
+        update_category,
+        name='update_category',
+    ),
+    path('deleteAnnotation/', delete_annotation, name='delete_annotation'),
+    path('updateAnnotation/', update_annotation, name='update_annotation'),
 ]
-

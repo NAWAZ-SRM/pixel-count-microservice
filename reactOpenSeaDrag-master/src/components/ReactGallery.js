@@ -1,137 +1,107 @@
 import React, { useState } from 'react';
-import Gallery from 'react-photo-gallery';
-import ReactPaginate from 'react-paginate';
-import imagereport from "../resources/test.jpg";
+import { Line } from 'react-chartjs-2';
+import axios from 'axios';
+import {
+    Chart as ChartJS,
+    CategoryScale,
+    LinearScale,
+    PointElement,
+    LineElement,
+    Title,
+    Tooltip,
+    Legend
+} from 'chart.js';
 
-import SideNav, { Toggle, Nav, NavItem, NavIcon, NavText } from '@trendmicro/react-sidenav';
+ChartJS.register(
+    CategoryScale,
+    LinearScale,
+    PointElement,
+    LineElement,
+    Title,
+    Tooltip,
+    Legend
+);
 
-import homeIcon from "../resources/icons/home (1).png";
-import gridIcon from "../resources/icons/menu.png";
+const ReactGallery = () => {
+    const [chartData, setChartData] = useState(null);
+    const [loading, setLoading] = useState(false);
 
-import { styled } from '@mui/material/styles';
-import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
-import Grid from '@mui/material/Grid';
+    const handleFileUpload = (event) => {
+        const file = event.target.files[0];
+        const formData = new FormData();
+        formData.append('file', file);
 
-const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-    ...theme.typography.body2,
-    padding: theme.spacing(1),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-}));
+        setLoading(true);
 
+        axios.post('http://127.0.0.1:8000/api/upload-image', formData, {
+            headers: {
+                'Content-Type': 'multipart/form-data'
+            }
+        })
+        .then(response => {
+            const data = response.data;
+            setChartData({
+                labels: data.labels,
+                datasets: [
+                    {
+                        label: 'Red Channel',
+                        data: data.r,
+                        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                        borderColor: 'rgba(255, 99, 132, 1)',
+                        borderWidth: 1,
+                        fill: false,
+                    },
+                    {
+                        label: 'Green Channel',
+                        data: data.g,
+                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        borderWidth: 1,
+                        fill: false,
+                    },
+                    {
+                        label: 'Blue Channel',
+                        data: data.b,
+                        backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                        borderColor: 'rgba(54, 162, 235, 1)',
+                        borderWidth: 1,
+                        fill: false,
+                    }
+                ]
+            });
+            setLoading(false);
+        })
+        .catch(error => {
+            console.error('Error uploading image:', error);
+            setLoading(false);
+        });
+    };
 
-const images = Array(100).fill({ src: `http://localhost:5000/get_image/0`, width: 1, height: 1 }); // Replace with your array of images
-
-const IMAGES_PER_PAGE = 10;
-
-function ImageGallery() {
-
-    // Create an array of 32 elements (8x4)
-    const items = Array.from({ length: 32 });
+    const options = {
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'top',
+            },
+            title: {
+                display: true,
+                text: 'RGB Intensity Histogram',
+            },
+        },
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    };
 
     return (
-        <div className="grid">
-            {items.map((_, index) => (
-                <div key={index} className="grid-item">
-                    {/* Content of the grid item */}
-                </div>
-            ))}
+        <div>
+            <input type="file" onChange={handleFileUpload} />
+            {loading && <p>Loading...</p>}
+            {chartData ? <Line data={chartData} options={options} /> : <p>Please upload an image to see the chart.</p>}
         </div>
     );
+};
 
-    // const [currentPage, setCurrentPage] = useState(0);
-    // const [rows, setRows] = useState(4);
-    // const [columns, setColumns] = useState(4);
-
-    // const handlePageClick = ({ selected }) => {
-    //     setCurrentPage(selected);
-    // };
-
-    // const currentImages = images.slice(currentPage * IMAGES_PER_PAGE, (currentPage + 1) * IMAGES_PER_PAGE);
-
-    // return (
-    //     // <div>
-    //     //     <Gallery photos={currentImages} />
-    //     //     {/* <ReactPaginate
-    //     //         previousLabel={'previous'}
-    //     //         nextLabel={'next'}
-    //     //         breakLabel={'...'}
-    //     //         breakClassName={'break-me'}
-    //     //         pageCount={Math.ceil(images.length / IMAGES_PER_PAGE)}
-    //     //         marginPagesDisplayed={2}
-    //     //         pageRangeDisplayed={5}
-    //     //         onPageChange={handlePageClick}
-    //     //         containerClassName={'pagination'}
-    //     //         subContainerClassName={'pages pagination'}
-    //     //         activeClassName={'active'}
-    //     //         pageClassName={'page'}
-    //     //     /> */}
-    //     // </div>
-    //     <div >
-    //         <SideNav
-    //             onSelect={(selected) => {
-    //                 // Add your code here
-    //             }}
-    //             style={{ background: "#1976d2" }}>
-    //             <SideNav.Toggle />
-    //             <SideNav.Nav defaultSelected="home">
-    //                 <NavItem eventKey="home">
-    //                     <NavIcon>
-    //                         {/* <i src={homeIcon} className="fa fa-fw fa-home" style={{ fontSize: '1.75em' }} /> */}
-    //                         <img src={homeIcon} style={{ fontSize: '1rem', width: "2rem", color: "white" }} />
-    //                     </NavIcon>
-    //                     <NavText>
-    //                         Home
-    //                     </NavText>
-    //                 </NavItem>
-    //                 <NavItem eventKey="changeDimension">
-    //                     <NavIcon>
-    //                         {/* <i className="fa fa-fw fa-line-chart" style={{ fontSize: '1.75em' }} /> */}
-    //                         <img src={gridIcon} style={{ fontSize: '1rem', width: "2rem", color: "white" }} />
-    //                     </NavIcon>
-    //                     <NavText>
-    //                         Adjust Dimension
-    //                     </NavText>
-    //                     <NavItem eventKey="charts/linechart">
-    //                         <NavText>
-    //                             {/* <button onClick={() => { onChangeItemsPerPage(1) }} className="btn btn-primary">1x1</button>
-    //                             <button onClick={() => { onChangeItemsPerPage(4) }} className="btn btn-primary">2x2</button>
-    //                             <button onClick={() => { onChangeItemsPerPage(9) }} className="btn btn-primary">3x3</button>
-    //                             <button onClick={() => { onChangeItemsPerPage(16) }} className="btn btn-primary">4x4</button> */}
-    //                         </NavText>
-    //                     </NavItem>
-    //                     <NavItem eventKey="charts/barchart">
-    //                         <NavText>
-    //                             Adjust image
-    //                         </NavText>
-    //                     </NavItem>
-    //                 </NavItem>
-    //             </SideNav.Nav>
-    //         </SideNav>
-
-    //         <Grid container spacing={0} style={{marginLeft: "65px", width: "95%", height: "95%"}}>
-    //             {
-    //                 currentImages.map((image, index) => (
-    //                     <Grid item xs={3}>
-    //                         <Item>
-    //                             <img key={index} src={image.src} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-    //                         </Item>
-    //                     </Grid>
-    //                 ))
-    //             }
-
-    //         </Grid>
-
-    //         {/* <div className="gallery" style={{ '--rows': rows, '--columns': columns }}>
-    //             {images.map((image, index) => (
-    //                 <img key={index} src={image.src} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-    //             ))}
-    //         </div> */}
-
-    //     </div>
-    // );
-}
-
-export default ImageGallery;
+export default ReactGallery;
