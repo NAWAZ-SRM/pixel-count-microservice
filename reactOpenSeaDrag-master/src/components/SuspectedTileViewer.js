@@ -98,7 +98,7 @@ const SuspectedTileViewer = () => {
         id: x.id,
         src: `http://127.0.0.1:8000/api/get_image/${Doctor}/${tileName}/${x.id}`,
         alt: x.title,
-        zoom: 49,
+        zoom: 1,
         x: x.openSeaXCoord,
         y: x.openSeaYCoord,
         annotation: x.title,
@@ -163,10 +163,12 @@ const SuspectedTileViewer = () => {
     if (scaleSelected) {
       return;
     }
-
+    console.log('Clicked tile data:', images.find(img => img.id === "1")); // For id "1" specifically
+    // Or use annotation to match dynamically:
+    console.log('Clicked tile data:', images.find(img => img.annotation === annotation));
     setSelectedAnnotation(annotation);
     setShowDragonView(true);
-    setZoomLevel(zoom);
+    setZoomLevel(4);
     setXCoord(x);
     setYCoord(y);
   };

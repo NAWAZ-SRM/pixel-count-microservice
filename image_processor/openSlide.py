@@ -9,6 +9,7 @@ from io import BytesIO
 from django.http import HttpResponse
 import openslide
 from django.conf import settings
+from PIL import Image
 
 
 # Define the root directory dynamically
@@ -49,13 +50,18 @@ def tileSlide(Doctor, tileSlide):
     slide, width, height = initiateTile(Doctor, tileSlide)
     predict_list = get_box_list(Doctor, tileSlide)
     predictArr = []
+    # print(Doctor, tileSlide)
 
+    print(predict_list)
     for title, x1, y1, x2, y2, id, cat in predict_list:
         left = int((x1 + x2) / 2)
         top = int((y1 + y2) / 2)
 
-        openSeaXCoord = (1 / width) * left
-        openSeaYCoord = (1 / height) * top
+        # left = min(max(left, 0), width - 1)
+        # top = min(max(top, 0), height - 1)
+
+        openSeaXCoord = left / width
+        openSeaYCoord = top / height  # No flip, assuming top-left origin
 
         predictArr.append(
             {
@@ -74,6 +80,7 @@ def tileSlide(Doctor, tileSlide):
         )
 
     tileDetail = {"width": width, "height": height}
+    print(f"Predicts: {predictArr}, tileDetail: {tileDetail}")
     return {"Predicts": predictArr, "tileDetail": tileDetail}
 
 
@@ -172,7 +179,9 @@ def get_box_list(Doctor, tileSlide):
     tree = ET.parse(ndpa_path)
     root = tree.getroot()
 
+    # Temporarily remove reference adjustment
     X_Reference, Y_Reference = get_reference(Doctor, tileSlide)
+    # X_Reference, Y_Reference = 0, 0  # Test without offset
     box_list = []
 
     for elem in root.iter():
@@ -186,6 +195,9 @@ def get_box_list(Doctor, tileSlide):
             for sub in elem.iter(tag='point'):
                 x.append(int(sub.find('x').text))
                 y.append(int(sub.find('y').text))
+
+            print(f"Raw NDPA coordinates for id={id}: x={x}, y={y}")
+            print(f"X_Reference={X_Reference}, Y_Reference={Y_Reference}")
 
             x1 = int((min(x) + X_Reference) / nm_p)
             x2 = int((max(x) + X_Reference) / nm_p)
@@ -224,6 +236,12 @@ def get_reference(Doctor, tileName):
     OffSet_From_Image_Center_Y = slide.properties.get(
         'hamamatsu.YOffsetFromSlideCentre'
     )
+
+    print(f"Slide properties: {slide.properties}")
+    print(
+        f"Width={w}, Height={h}, ImageCenter_X={ImageCenter_X}, ImageCenter_Y={ImageCenter_Y}"
+    )
+    print(f"Offsets: X={OffSet_From_Image_Center_X}, Y={OffSet_From_Image_Center_Y}")
 
     X_Ref = float(ImageCenter_X) - float(OffSet_From_Image_Center_X)
     Y_Ref = float(ImageCenter_Y) - float(OffSet_From_Image_Center_Y)
