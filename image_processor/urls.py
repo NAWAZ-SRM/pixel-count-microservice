@@ -9,6 +9,8 @@ from .views import (
     tile_slide,
     get_image,
     tile,
+    SignupView,
+    LoginView,
 )
 
 urlpatterns = [
@@ -34,4 +36,6 @@ urlpatterns = [
     ),
     path('deleteAnnotation/', delete_annotation, name='delete_annotation'),
     path('updateAnnotation/', update_annotation, name='update_annotation'),
+    path('signup/', SignupView.as_view(), name='signup'),
+    path('login/', LoginView.as_view(), name='login'),
 ]

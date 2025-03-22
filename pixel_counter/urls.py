@@ -28,6 +28,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('api/', include('image_processor.urls')),  # API routes
     path('', frontend_view, name='frontend'),
+    re_path(r'^(?!api/(?!login|signup)).*', frontend_view, name='frontend-catchall'),
 ]
 
 if settings.DEBUG:

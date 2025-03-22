@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'image_processor',  # Your app
     'django_extensions',
     'rest_framework',  # Added DRF for APIs
+    'rest_framework.authtoken',  # Added for token authentication
     'corsheaders',  # Added CORS middleware
 ]
 
@@ -55,9 +56,20 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+AUTH_USER_MODEL = 'image_processor.Doctor'
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    ],
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',  # Require authentication by default
+    ],
+}
+
 # Allow React to interact with Django
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",  # React Dev Server
     "http://localhost:8000",
     "http://127.0.0.1:8000",
     # If React is served from Django

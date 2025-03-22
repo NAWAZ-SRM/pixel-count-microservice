@@ -6,5 +6,9 @@ uv.lock
 .venv/
 
 openslide-python
-static/images/tiles/Doctors/A
+static/images/tiles/Doctors/
+# static/images/tiles/Doctors/DoctorC
 staticfiles
+
+#db backup
+db.sqlite3.bak
