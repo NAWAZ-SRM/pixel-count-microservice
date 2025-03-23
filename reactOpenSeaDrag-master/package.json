@@ -19,6 +19,7 @@
     "chart.js": "^4.4.3",
     "fabric": "^5.3.0",
     "lightgallery": "^2.7.2",
+    "lucide-react": "^0.483.0",
     "openseadragon": "^4.1.1",
     "openseadragon-filtering": "^1.0.0",
     "primereact": "^10.6.6",
@@ -45,7 +46,6 @@
   },
   "homepage": "/static/frontend",
   "scripts": {
-
     "start": "react-scripts start",
     "build": "react-scripts build && rm -rf ../static/frontend/* && cp -r build/* ../static/frontend/",
     "test": "react-scripts test",
