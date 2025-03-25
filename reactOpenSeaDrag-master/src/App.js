@@ -384,7 +384,7 @@ function App() {
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-10 bg-blue-50">
-      <header className="bg-blue-600 text-white shadow py-4 w-full">
+      {/* <header className="bg-blue-600 text-white shadow py-4 w-full">
         <div className="container mx-auto flex justify-between items-center px-6">
           <div className="text-2xl font-semibold">Clinical Slide Viewer</div>
 
@@ -396,15 +396,15 @@ function App() {
             <div className="relative">
               
               <div className="flex items-center space-x-6">
-              {/* Display Selected Doctor */}
+              
               <div className="text-white font-semibold">{selectedDoctor}</div></div>
 
-              {/* Profile Icon */}
+             
               <button onClick={() => setShowProfileMenu(!showProfileMenu)} className="focus:outline-none">
                 <UserCircle className="w-8 h-8 text-white hover:text-gray-200" />
               </button>
 
-              {/* Profile Dropdown */}
+             
               {showProfileMenu && (
                 <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg z-50">
                   <div className="px-4 py-2 text-gray-900 border-b border-gray-200">
@@ -422,7 +422,44 @@ function App() {
             </div>
           )}
         </div>
-      </header>
+      </header> */}
+
+
+
+<header className="bg-blue-600 text-white shadow py-4 w-full">
+  <div className="container mx-auto flex justify-between items-center px-6">
+    <div className="text-2xl font-semibold">Clinical Slide Viewer</div>
+
+    {isAuthenticated && (
+      <div className="relative flex items-center space-x-4">
+        {/* Display Selected Doctor */}
+        <div className="text-white font-semibold">{selectedDoctor}</div>
+
+        {/* Profile Icon */}
+        <button onClick={() => setShowProfileMenu(!showProfileMenu)} className="focus:outline-none">
+          <UserCircle className="w-8 h-8 text-white hover:text-gray-200" />
+        </button>
+
+        {/* Profile Dropdown */}
+        {showProfileMenu && (
+          <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg z-50">
+            <div className="px-4 py-2 text-gray-900 border-b border-gray-200">
+              {selectedDoctor || "Select a doctor"}
+            </div>
+            <button
+              onClick={handleLogout}
+              className="flex items-center w-full px-4 py-2 text-red-600 hover:bg-gray-100 transition"
+            >
+              <LogOut className="w-5 h-5 mr-2" />
+              Logout
+            </button>
+          </div>
+        )}
+      </div>
+    )}
+  </div>
+</header>
+
 
       <main className="flex-grow container mx-auto p-6 overflow-x-auto">
         <Routes>
