@@ -44,6 +44,7 @@ def tile(request, doctor, tile_name, level, row, col):
     return response
 
 
+
 # Folder Functions
 @csrf_exempt
 @api_view(['GET'])
@@ -168,3 +169,43 @@ def frontend_view(request):
         return HttpResponseNotFound(
             "React frontend not found. Build it using 'npm run build'"
         )
+
+
+@csrf_exempt
+@api_view(['GET'])
+@authentication_classes([])
+@permission_classes([])
+def list_folder_items(request, doctor, folder_name):
+    """Lists all items inside a selected folder under a doctor's directory."""
+    doctor_path = os.path.join(ROOT_DIR,'images', "tiles", "Doctors", doctor, folder_name)
+
+    if not os.path.exists(doctor_path):
+        return JsonResponse({"error": "Folder not found"}, status=404)
+
+    items = os.listdir(doctor_path)
+    print({"items": items})
+    return JsonResponse({"items": items})
+
+
+
+
+
+
+@csrf_exempt
+@api_view(['GET'])
+@authentication_classes([])
+@permission_classes([])
+def list_doctor_folders(request, doctor_name):
+    """Lists folders inside a doctor's directory under 'static/tiles/Doctors/'."""
+    
+    base_path = os.path.join(ROOT_DIR,'images', "tiles", "Doctors", doctor_name)
+    
+    if not os.path.exists(base_path):
+        return JsonResponse({"error": "Doctor folder not found"}, status=404)
+
+    folders = [
+        folder for folder in os.listdir(base_path)
+        if os.path.isdir(os.path.join(base_path, folder))
+    ]
+    print({"Folders":folders})
+    return JsonResponse({"folders": folders})

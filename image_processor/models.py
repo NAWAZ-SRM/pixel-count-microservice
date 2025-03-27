@@ -23,3 +23,6 @@ class Doctor(AbstractUser):
 
     def __str__(self):
         return self.username
+
+
+

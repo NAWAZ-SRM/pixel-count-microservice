@@ -20,7 +20,7 @@ import util from '../util/datamanager';
 import gridIcon from "../resources/icons/menu.png";
 import nextIcon from "../resources/icons/next.png";
 import prevIcon from "../resources/icons/arrow.png";
-import fullScreenIcon from "../resources/icons/fullscreen.png";
+import fullScreenIcon from "../resources/icons/full.png";
 import nextPatient from '../resources/icons/next (1).png';
 import previousPatient from '../resources/icons/back.png';
 import measureIcon from '../resources/icons/measure.png';

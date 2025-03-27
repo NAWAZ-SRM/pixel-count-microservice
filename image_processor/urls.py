@@ -11,6 +11,9 @@ from .views import (
     tile,
     SignupView,
     LoginView,
+    list_folder_items,
+    list_doctor_folders,
+    
 )
 
 urlpatterns = [
@@ -38,4 +41,13 @@ urlpatterns = [
     path('updateAnnotation/', update_annotation, name='update_annotation'),
     path('signup/', SignupView.as_view(), name='signup'),
     path('login/', LoginView.as_view(), name='login'),
+    path("listDoctorFolders/<str:doctor_name>/", list_doctor_folders, name="list_doctor_folders"),
+    path('listFolderItems/<str:doctor>/<str:folder_name>/', list_folder_items, name='list_folder_items'),
+    
+
+
+
 ]
+
+
+
