@@ -98,7 +98,7 @@ const SuspectedTileViewer = () => {
         id: x.id,
         src: `http://127.0.0.1:8000/api/get_image/${Doctor}/${tileName}/${x.id}`,
         alt: x.title,
-        zoom: 1,
+        zoom: 64,
         x: x.openSeaXCoord,
         y: x.openSeaYCoord,
         annotation: x.title,
