@@ -274,14 +274,6 @@
 #     return (255 * np.power(img_stretched / 255, gamma)).astype('uint8')
 
 
-
-
-
-
-
-
-
-
 # image_processor/openSlide.py
 
 import os
@@ -298,6 +290,7 @@ from PIL import Image
 # Define the root directory dynamically
 ROOT_DIR = os.path.join(settings.BASE_DIR, 'static', 'images', 'tiles', 'Doctors')
 
+
 def get_available_date_folders(Doctor):
     """
     Get a list of available date folders for a given doctor.
@@ -312,8 +305,13 @@ def get_available_date_folders(Doctor):
     if not os.path.exists(doctor_path):
         return []
     # List directories only (date folders)
-    date_folders = [f for f in os.listdir(doctor_path) if os.path.isdir(os.path.join(doctor_path, f))]
+    date_folders = [
+        f
+        for f in os.listdir(doctor_path)
+        if os.path.isdir(os.path.join(doctor_path, f))
+    ]
     return sorted(date_folders)  # Sort for consistency, e.g., latest date last
+
 
 def initiateTile(Doctor, Patient, DateFolder=None):
     """
@@ -331,7 +329,7 @@ def initiateTile(Doctor, Patient, DateFolder=None):
         FileNotFoundError: If no slide file is found.
     """
     tileName = f"{Patient}.ndpi"
-    
+
     # Get available date folders
     available_date_folders = get_available_date_folders(Doctor)
     if not available_date_folders:
@@ -340,18 +338,22 @@ def initiateTile(Doctor, Patient, DateFolder=None):
     # Use provided DateFolder or default to the latest one
     if DateFolder is None:
         DateFolder = available_date_folders[-1]  # Latest date folder
-    
+
     # Ensure the provided DateFolder exists
     if DateFolder not in available_date_folders:
-        raise FileNotFoundError(f"Date folder '{DateFolder}' not found for doctor: {Doctor}. Available: {available_date_folders}")
+        raise FileNotFoundError(
+            f"Date folder '{DateFolder}' not found for doctor: {Doctor}. Available: {available_date_folders}"
+        )
 
     slide_path = os.path.join(ROOT_DIR, Doctor, DateFolder, Patient, tileName)
     if not os.path.exists(slide_path):
         raise FileNotFoundError(f"Slide file not found: {slide_path}")
-    
+
     slide = openslide.OpenSlide(slide_path)
     width, height = slide.dimensions
+    print(f"Slide dimensions for {slide_path}: width={width}, height={height}")
     return slide, width, height
+
 
 def tileSlide(Doctor, tileSlide, DateFolder=None):
     """
@@ -395,6 +397,7 @@ def tileSlide(Doctor, tileSlide, DateFolder=None):
     tileDetail = {"width": width, "height": height}
     return {"Predicts": predictArr, "tileDetail": tileDetail}
 
+
 def get_image(Doctor, tileSlide, annotNo, DateFolder=None):
     """
     Creates an image from the annotation coordinates.
@@ -424,6 +427,7 @@ def get_image(Doctor, tileSlide, annotNo, DateFolder=None):
     output = BytesIO()
     tile.save(output, format='JPEG')
     return HttpResponse(output.getvalue(), content_type="image/jpeg")
+
 
 def tile(Doctor, tileName, level, row, col, DateFolder=None):
     """
@@ -469,6 +473,7 @@ def tile(Doctor, tileName, level, row, col, DateFolder=None):
     except Exception as e:
         return HttpResponse(f"Error: {e}", status=500)
 
+
 def get_box_list(Doctor, tileSlide, DateFolder=None):
     """
     Extract annotation bounding boxes from an NDPA file.
@@ -483,7 +488,13 @@ def get_box_list(Doctor, tileSlide, DateFolder=None):
     """
     nm_p = 221
     tileName = f"{tileSlide}.ndpa"
-    ndpa_path = os.path.join(ROOT_DIR, Doctor, DateFolder if DateFolder else get_available_date_folders(Doctor)[-1], tileSlide, tileName)
+    ndpa_path = os.path.join(
+        ROOT_DIR,
+        Doctor,
+        DateFolder if DateFolder else get_available_date_folders(Doctor)[-1],
+        tileSlide,
+        tileName,
+    )
 
     if not os.path.exists(ndpa_path):
         raise FileNotFoundError(f"NDPA file not found: {ndpa_path}")
@@ -516,6 +527,7 @@ def get_box_list(Doctor, tileSlide, DateFolder=None):
 
     return box_list
 
+
 def get_reference(Doctor, tileName, DateFolder=None):
     """
     Get reference points for annotation alignment.
@@ -537,12 +549,17 @@ def get_reference(Doctor, tileName, DateFolder=None):
     ImageCenter_X = (w / 2) * nm_p
     ImageCenter_Y = (h / 2) * nm_p
 
-    OffSet_From_Image_Center_X = slide.properties.get('hamamatsu.XOffsetFromSlideCentre')
-    OffSet_From_Image_Center_Y = slide.properties.get('hamamatsu.YOffsetFromSlideCentre')
+    OffSet_From_Image_Center_X = slide.properties.get(
+        'hamamatsu.XOffsetFromSlideCentre'
+    )
+    OffSet_From_Image_Center_Y = slide.properties.get(
+        'hamamatsu.YOffsetFromSlideCentre'
+    )
 
     X_Ref = float(ImageCenter_X) - float(OffSet_From_Image_Center_X)
     Y_Ref = float(ImageCenter_Y) - float(OffSet_From_Image_Center_Y)
     return X_Ref, Y_Ref
+
 
 def get_bnc_adjusted(img, clip=12):
     """
