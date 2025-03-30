@@ -374,6 +374,9 @@ def tileSlide(Doctor, tileSlide, DateFolder=None):
     for title, x1, y1, x2, y2, id, cat in predict_list:
         left = int((x1 + x2) / 2)
         top = int((y1 + y2) / 2)
+        print(
+            f"Predicted coords are: x1: {x1}, y1: {y1}, x2: {x2}, y2: {y2}, top: {top}"
+        )
 
         openSeaXCoord = left / width
         openSeaYCoord = top / height
