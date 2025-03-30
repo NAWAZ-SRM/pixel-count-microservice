@@ -8,6 +8,18 @@ from django.conf import settings
 from django.views.decorators.csrf import csrf_exempt
 from . import fileoperation, openSlide
 from django.http import HttpResponse, HttpResponseNotFound
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework import status
+from rest_framework.authtoken.models import Token
+from .serializers import DoctorSerializer, LoginSerializer
+from rest_framework.permissions import IsAuthenticated, AllowAny
+from rest_framework.decorators import (
+    api_view,
+    authentication_classes,
+    permission_classes,
+)
+from rest_framework.authentication import TokenAuthentication
 
 ROOT_DIR = os.path.join(settings.BASE_DIR, 'static')
 
@@ -32,12 +44,24 @@ def tile(request, doctor, tile_name, level, row, col):
     return response
 
 
+
 # Folder Functions
 @csrf_exempt
+@api_view(['GET'])
+@authentication_classes([TokenAuthentication])
+@permission_classes([IsAuthenticated])
 def get_doctors(request):
-    """Fetches all doctors and their patient folders."""
+    print(
+        f"get_doctors: Request user: {request.user}, is_authenticated: {request.user.is_authenticated}"
+    )
+    if not request.user.is_authenticated:
+        print("get_doctors: User not authenticated, returning 401")
+        return JsonResponse({'error': 'Authentication required'}, status=401)
     doctor_list = fileoperation.getDoctors()
-    return JsonResponse({"doctors": doctor_list})
+    print(f"get_doctors: Doctor list before filter: {doctor_list}")
+    doctor_list = [d for d in doctor_list if d['name'] == request.user.username]
+    print(f"get_doctors: Doctor list after filter: {doctor_list}")
+    return JsonResponse({'doctors': doctor_list})
 
 
 # Annotation Routes
@@ -106,13 +130,82 @@ def update_annotation(request):
         return JsonResponse({"error": str(e)}, status=500)
 
 
-def frontend_view(request):
-    index_path = os.path.join(settings.BASE_DIR, "static", "frontend", "index.html")
+# New signup and login views
+class SignupView(APIView):
+    permission_classes = [AllowAny]
 
+    def post(self, request):
+        serializer = DoctorSerializer(data=request.data)
+        if serializer.is_valid():
+            user = serializer.save()
+            token, _ = Token.objects.get_or_create(user=user)
+            return Response({'token': token.key}, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+# image_processor/views.py
+class LoginView(APIView):
+    permission_classes = [AllowAny]
+
+    def post(self, request):
+        serializer = LoginSerializer(data=request.data)
+        if serializer.is_valid():
+            user = serializer.validated_data
+            token, created = Token.objects.get_or_create(user=user)
+            print(
+                f"LoginView: User {user.username} logged in, token: {token.key}, created: {created}"
+            )
+            return Response({'token': token.key}, status=status.HTTP_200_OK)
+        print(f"LoginView: Validation failed, errors: {serializer.errors}")
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+def frontend_view(request):
+    index_path = os.path.join(settings.BASE_DIR, 'static', 'frontend', 'index.html')
     if os.path.exists(index_path):
-        with open(index_path, "r") as file:
+        with open(index_path, 'r') as file:
             return HttpResponse(file.read())
     else:
         return HttpResponseNotFound(
             "React frontend not found. Build it using 'npm run build'"
         )
+
+
+@csrf_exempt
+@api_view(['GET'])
+@authentication_classes([])
+@permission_classes([])
+def list_folder_items(request, doctor, folder_name):
+    """Lists all items inside a selected folder under a doctor's directory."""
+    doctor_path = os.path.join(ROOT_DIR,'images', "tiles", "Doctors", doctor, folder_name)
+
+    if not os.path.exists(doctor_path):
+        return JsonResponse({"error": "Folder not found"}, status=404)
+
+    items = os.listdir(doctor_path)
+    print({"items": items})
+    return JsonResponse({"items": items})
+
+
+
+
+
+
+@csrf_exempt
+@api_view(['GET'])
+@authentication_classes([])
+@permission_classes([])
+def list_doctor_folders(request, doctor_name):
+    """Lists folders inside a doctor's directory under 'static/tiles/Doctors/'."""
+    
+    base_path = os.path.join(ROOT_DIR,'images', "tiles", "Doctors", doctor_name)
+    
+    if not os.path.exists(base_path):
+        return JsonResponse({"error": "Doctor folder not found"}, status=404)
+
+    folders = [
+        folder for folder in os.listdir(base_path)
+        if os.path.isdir(os.path.join(base_path, folder))
+    ]
+    print({"Folders":folders})
+    return JsonResponse({"folders": folders})
