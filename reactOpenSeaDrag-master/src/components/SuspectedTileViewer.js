@@ -652,7 +652,7 @@ const SuspectedTileViewer = () => {
     console.log('Clicked tile data:', images.find(img => img.annotation === annotation));
     setSelectedAnnotation(annotation);
     setShowDragonView(true);
-    setZoomLevel(4);
+    setZoomLevel(50);
     setXCoord(x); // Now passing pixel coordinate (left)
     setYCoord(y); // Now passing pixel coordinate (top)
   };

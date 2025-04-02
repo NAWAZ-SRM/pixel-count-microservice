@@ -218,7 +218,7 @@ const DeepZoomViewer = forwardRef(({
       // viewer.viewport.applyConstraints();
       // viewer.forceRedraw();
       console.log('Zooming to:', zoomLevel, 'at', xCoord, yCoord);
-      viewer.viewport.zoomTo(zoomLevel || 2);
+      viewer.viewport.zoomTo(zoomLevel || 50);
 
       // Convert pixel coordinates (xCoord, yCoord) to viewport coordinates
       const viewportPoint = viewer.viewport.imageToViewportCoordinates(xCoord, yCoord);
