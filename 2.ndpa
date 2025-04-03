@@ -1,0 +1,1888 @@
+<annotations>
+	<ndpviewstate id="1">
+		<title>HSIL</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>22.340128</lens>
+		<x>18482254</x>
+		<y>752056</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>18544786</x>
+					<y>777979</y>
+				</point>
+				<point>
+					<x>18544786</x>
+					<y>805683</y>
+				</point>
+				<point>
+					<x>18571700</x>
+					<y>805683</y>
+				</point>
+				<point>
+					<x>18571700</x>
+					<y>777979</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="2">
+		<title>HSIL</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>40.000000</lens>
+		<x>15870464</x>
+		<y>1603496</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>15910472</x>
+					<y>1599848</y>
+				</point>
+				<point>
+					<x>15910472</x>
+					<y>1634109</y>
+				</point>
+				<point>
+					<x>15939428</x>
+					<y>1634110</y>
+				</point>
+				<point>
+					<x>15939428</x>
+					<y>1599848</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="3">
+		<title>HSIL</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>37.932671</lens>
+		<x>14767924</x>
+		<y>2642156</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>14743218</x>
+					<y>2604512</y>
+				</point>
+				<point>
+					<x>14743218</x>
+					<y>2647167</y>
+				</point>
+				<point>
+					<x>14763496</x>
+					<y>2647167</y>
+				</point>
+				<point>
+					<x>14763496</x>
+					<y>2604512</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="4">
+		<title>HSIL</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>40.000000</lens>
+		<x>13717992</x>
+		<y>-563343</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>13777894</x>
+					<y>-597715</y>
+				</point>
+				<point>
+					<x>13777894</x>
+					<y>-565222</y>
+				</point>
+				<point>
+					<x>13808397</x>
+					<y>-565222</y>
+				</point>
+				<point>
+					<x>13808397</x>
+					<y>-597715</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="5">
+		<title>HSIL</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>37.488285</lens>
+		<x>14727474</x>
+		<y>-2460295</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>14759786</x>
+					<y>-2464658</y>
+				</point>
+				<point>
+					<x>14759786</x>
+					<y>-2428337</y>
+				</point>
+				<point>
+					<x>14809078</x>
+					<y>-2428337</y>
+				</point>
+				<point>
+					<x>14809078</x>
+					<y>-2464658</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="6">
+		<title>LSIL</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>20.905195</lens>
+		<x>13725286</x>
+		<y>-3823218</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>13910954</x>
+					<y>-3799323</y>
+				</point>
+				<point>
+					<x>13910954</x>
+					<y>-3756183</y>
+				</point>
+				<point>
+					<x>13969318</x>
+					<y>-3756183</y>
+				</point>
+				<point>
+					<x>13969318</x>
+					<y>-3799323</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="7">
+		<title>LSIL</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>40.000000</lens>
+		<x>18009012</x>
+		<y>-3832060</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>18041724</x>
+					<y>-3852284</y>
+				</point>
+				<point>
+					<x>18041724</x>
+					<y>-3786193</y>
+				</point>
+				<point>
+					<x>18080406</x>
+					<y>-3786193</y>
+				</point>
+				<point>
+					<x>18080406</x>
+					<y>-3852284</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="8">
+		<title>LSIL</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>40.000000</lens>
+		<x>18348968</x>
+		<y>-3637988</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>18360462</x>
+					<y>-3648486</y>
+				</point>
+				<point>
+					<x>18360462</x>
+					<y>-3620857</y>
+				</point>
+				<point>
+					<x>18393396</x>
+					<y>-3620857</y>
+				</point>
+				<point>
+					<x>18393396</x>
+					<y>-3648486</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="9">
+		<title>LSIL</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>40.000000</lens>
+		<x>18348968</x>
+		<y>-3637988</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>18396712</x>
+					<y>-3646276</y>
+				</point>
+				<point>
+					<x>18396712</x>
+					<y>-3603173</y>
+				</point>
+				<point>
+					<x>18427216</x>
+					<y>-3603173</y>
+				</point>
+				<point>
+					<x>18427216</x>
+					<y>-3646276</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="10">
+		<title>HSIL</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>37.250885</lens>
+		<x>19092984</x>
+		<y>914077</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>19125500</x>
+					<y>936744</y>
+				</point>
+				<point>
+					<x>19125500</x>
+					<y>964039</y>
+				</point>
+				<point>
+					<x>19148286</x>
+					<y>964039</y>
+				</point>
+				<point>
+					<x>19148286</x>
+					<y>936744</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="11">
+		<title>HSIL</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>37.250885</lens>
+		<x>19092984</x>
+		<y>914077</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>19132620</x>
+					<y>912534</y>
+				</point>
+				<point>
+					<x>19132620</x>
+					<y>935557</y>
+				</point>
+				<point>
+					<x>19149948</x>
+					<y>935557</y>
+				</point>
+				<point>
+					<x>19149948</x>
+					<y>912534</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="12">
+		<title>HSIL</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>40.000000</lens>
+		<x>15835761</x>
+		<y>-665684</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>15802163</x>
+					<y>-667563</y>
+				</point>
+				<point>
+					<x>15802163</x>
+					<y>-637501</y>
+				</point>
+				<point>
+					<x>15833330</x>
+					<y>-637501</y>
+				</point>
+				<point>
+					<x>15833330</x>
+					<y>-667563</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="13">
+		<title>HSIL</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>40.000000</lens>
+		<x>15816531</x>
+		<y>-1909025</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>15811226</x>
+					<y>-1928366</y>
+				</point>
+				<point>
+					<x>15811226</x>
+					<y>-1907146</y>
+				</point>
+				<point>
+					<x>15843277</x>
+					<y>-1907146</y>
+				</point>
+				<point>
+					<x>15843277</x>
+					<y>-1928366</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="14">
+		<title>LSIL</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>40.000000</lens>
+		<x>16555241</x>
+		<y>-3582728</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>16612269</x>
+					<y>-3604279</y>
+				</point>
+				<point>
+					<x>16612269</x>
+					<y>-3552998</y>
+				</point>
+				<point>
+					<x>16646088</x>
+					<y>-3552998</y>
+				</point>
+				<point>
+					<x>16646088</x>
+					<y>-3604279</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="15">
+		<title>HSIL</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>40.000000</lens>
+		<x>16841708</x>
+		<y>-3767074</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>16869116</x>
+					<y>-3752817</y>
+				</point>
+				<point>
+					<x>16869116</x>
+					<y>-3731376</y>
+				</point>
+				<point>
+					<x>16892766</x>
+					<y>-3731376</y>
+				</point>
+				<point>
+					<x>16892768</x>
+					<y>-3752817</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="16">
+		<title>HSIL</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>40.000000</lens>
+		<x>16854086</x>
+		<y>-4017290</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>16878178</x>
+					<y>-4013421</y>
+				</point>
+				<point>
+					<x>16878178</x>
+					<y>-3980928</y>
+				</point>
+				<point>
+					<x>16905146</x>
+					<y>-3980928</y>
+				</point>
+				<point>
+					<x>16905146</x>
+					<y>-4013421</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="17">
+		<title>LSIL</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>40.000000</lens>
+		<x>16854086</x>
+		<y>-4017290</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>16907356</x>
+					<y>-3984685</y>
+				</point>
+				<point>
+					<x>16907356</x>
+					<y>-3946225</y>
+				</point>
+				<point>
+					<x>16948690</x>
+					<y>-3946225</y>
+				</point>
+				<point>
+					<x>16948690</x>
+					<y>-3984686</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="18">
+		<title>HSIL</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>40.000000</lens>
+		<x>16651393</x>
+		<y>-4084043</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>16595249</x>
+					<y>-4122393</y>
+				</point>
+				<point>
+					<x>16595249</x>
+					<y>-4090564</y>
+				</point>
+				<point>
+					<x>16620448</x>
+					<y>-4090564</y>
+				</point>
+				<point>
+					<x>16620448</x>
+					<y>-4122393</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="19">
+		<title>LSIL</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>15.650064</lens>
+		<x>15072736</x>
+		<y>-4512637</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>15019410</x>
+					<y>-4499926</y>
+				</point>
+				<point>
+					<x>15019410</x>
+					<y>-4438910</y>
+				</point>
+				<point>
+					<x>15084944</x>
+					<y>-4438910</y>
+				</point>
+				<point>
+					<x>15084944</x>
+					<y>-4499926</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="20">
+		<title>LSIL</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>40.000000</lens>
+		<x>15860960</x>
+		<y>-4705604</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>15890579</x>
+					<y>-4756111</y>
+				</point>
+				<point>
+					<x>15890579</x>
+					<y>-4714998</y>
+				</point>
+				<point>
+					<x>15914451</x>
+					<y>-4714997</y>
+				</point>
+				<point>
+					<x>15914451</x>
+					<y>-4756111</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="22">
+		<title>LSIL</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>25.708593</lens>
+		<x>19542576</x>
+		<y>-3057541</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>19771278</x>
+					<y>-3004405</y>
+				</point>
+				<point>
+					<x>19771278</x>
+					<y>-2967607</y>
+				</point>
+				<point>
+					<x>19806358</x>
+					<y>-2967607</y>
+				</point>
+				<point>
+					<x>19806358</x>
+					<y>-3004405</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="24">
+		<title>LSIL</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>25.708593</lens>
+		<x>19518482</x>
+		<y>-206587</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>19540148</x>
+					<y>-205383</y>
+				</point>
+				<point>
+					<x>19540148</x>
+					<y>-148294</y>
+				</point>
+				<point>
+					<x>19596550</x>
+					<y>-148294</y>
+				</point>
+				<point>
+					<x>19596550</x>
+					<y>-205383</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="25">
+		<title>ASCH</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>25.708593</lens>
+		<x>19518482</x>
+		<y>3112083</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>19250574</x>
+					<y>3024557</y>
+				</point>
+				<point>
+					<x>19250574</x>
+					<y>3052757</y>
+				</point>
+				<point>
+					<x>19269144</x>
+					<y>3052757</y>
+				</point>
+				<point>
+					<x>19269144</x>
+					<y>3024557</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="26">
+		<title>LSIL</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>25.708593</lens>
+		<x>18937372</x>
+		<y>3394128</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>18627850</x>
+					<y>3289404</y>
+				</point>
+				<point>
+					<x>18627850</x>
+					<y>3360939</y>
+				</point>
+				<point>
+					<x>18702136</x>
+					<y>3360939</y>
+				</point>
+				<point>
+					<x>18702136</x>
+					<y>3289404</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="27">
+		<title>ASCH</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>25.708593</lens>
+		<x>18937372</x>
+		<y>1757118</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>18856552</x>
+					<y>1643798</y>
+				</point>
+				<point>
+					<x>18856552</x>
+					<y>1679909</y>
+				</point>
+				<point>
+					<x>18880970</x>
+					<y>1679909</y>
+				</point>
+				<point>
+					<x>18880970</x>
+					<y>1643798</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="32">
+		<title>ASCUS</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>25.708593</lens>
+		<x>18937372</x>
+		<y>-1922729</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>18995148</x>
+					<y>-2012319</y>
+				</point>
+				<point>
+					<x>18995148</x>
+					<y>-1975176</y>
+				</point>
+				<point>
+					<x>19030228</x>
+					<y>-1975176</y>
+				</point>
+				<point>
+					<x>19030228</x>
+					<y>-2012319</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="33">
+		<title>ASCUS</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>25.708593</lens>
+		<x>18937372</x>
+		<y>-1922729</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>19102452</x>
+					<y>-2024012</y>
+				</point>
+				<point>
+					<x>19102452</x>
+					<y>-1968642</y>
+				</point>
+				<point>
+					<x>19132370</x>
+					<y>-1968642</y>
+				</point>
+				<point>
+					<x>19132370</x>
+					<y>-2024012</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="34">
+		<title>HSIL</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>25.708593</lens>
+		<x>18270058</x>
+		<y>-4591327</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>18159660</x>
+					<y>-4544036</y>
+				</point>
+				<point>
+					<x>18159660</x>
+					<y>-4513772</y>
+				</point>
+				<point>
+					<x>18178576</x>
+					<y>-4513772</y>
+				</point>
+				<point>
+					<x>18178576</x>
+					<y>-4544036</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="35">
+		<title>HSIL</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>25.708593</lens>
+		<x>18270058</x>
+		<y>-3349975</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>18551034</x>
+					<y>-3278269</y>
+				</point>
+				<point>
+					<x>18551034</x>
+					<y>-3249724</y>
+				</point>
+				<point>
+					<x>18594368</x>
+					<y>-3249724</y>
+				</point>
+				<point>
+					<x>18594368</x>
+					<y>-3278269</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="36">
+		<title>LSIL</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>24.032684</lens>
+		<x>18256354</x>
+		<y>778138</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>17947688</x>
+					<y>787888</y>
+				</point>
+				<point>
+					<x>17947688</x>
+					<y>833875</y>
+				</point>
+				<point>
+					<x>17975648</x>
+					<y>833875</y>
+				</point>
+				<point>
+					<x>17975648</x>
+					<y>787888</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="37">
+		<title>HSIL</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>24.032684</lens>
+		<x>17583070</x>
+		<y>3320301</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>17705580</x>
+					<y>3305769</y>
+				</point>
+				<point>
+					<x>17705580</x>
+					<y>3327476</y>
+				</point>
+				<point>
+					<x>17723974</x>
+					<y>3327476</y>
+				</point>
+				<point>
+					<x>17723974</x>
+					<y>3305769</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="41">
+		<title>LSIL</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>24.032684</lens>
+		<x>17583070</x>
+		<y>-1436666</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>17453938</x>
+					<y>-1458556</y>
+				</point>
+				<point>
+					<x>17453938</x>
+					<y>-1423238</y>
+				</point>
+				<point>
+					<x>17491832</x>
+					<y>-1423238</y>
+				</point>
+				<point>
+					<x>17491832</x>
+					<y>-1458556</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="45">
+		<title>HSIL</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>24.032684</lens>
+		<x>17583070</x>
+		<y>-3412308</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>17411998</x>
+					<y>-3512191</y>
+				</point>
+				<point>
+					<x>17411998</x>
+					<y>-3479081</y>
+				</point>
+				<point>
+					<x>17457986</x>
+					<y>-3479081</y>
+				</point>
+				<point>
+					<x>17457986</x>
+					<y>-3512191</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="46">
+		<title>ASCUS</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>24.032684</lens>
+		<x>16942942</x>
+		<y>-3868531</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>16811972</x>
+					<y>-4028750</y>
+				</point>
+				<point>
+					<x>16811972</x>
+					<y>-3990120</y>
+				</point>
+				<point>
+					<x>16846186</x>
+					<y>-3990120</y>
+				</point>
+				<point>
+					<x>16846186</x>
+					<y>-4028750</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="47">
+		<title>ASCUS</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>24.032684</lens>
+		<x>16942942</x>
+		<y>-3868531</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>16823008</x>
+					<y>-3979451</y>
+				</point>
+				<point>
+					<x>16823008</x>
+					<y>-3939719</y>
+				</point>
+				<point>
+					<x>16855752</x>
+					<y>-3939719</y>
+				</point>
+				<point>
+					<x>16855752</x>
+					<y>-3979451</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="48">
+		<title>LSIL</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>24.032684</lens>
+		<x>16942942</x>
+		<y>-3592454</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>17144182</x>
+					<y>-3555848</y>
+				</point>
+				<point>
+					<x>17144182</x>
+					<y>-3495514</y>
+				</point>
+				<point>
+					<x>17211140</x>
+					<y>-3495514</y>
+				</point>
+				<point>
+					<x>17211140</x>
+					<y>-3555848</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="49">
+		<title>ASCUS</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>24.032684</lens>
+		<x>16218158</x>
+		<y>3132640</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>16201234</x>
+					<y>3133559</y>
+				</point>
+				<point>
+					<x>16201234</x>
+					<y>3167036</y>
+				</point>
+				<point>
+					<x>16278493</x>
+					<y>3167036</y>
+				</point>
+				<point>
+					<x>16278493</x>
+					<y>3133559</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="50">
+		<title>LSIL</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>24.032684</lens>
+		<x>16218158</x>
+		<y>2694763</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>16082772</x>
+					<y>2607756</y>
+				</point>
+				<point>
+					<x>16082772</x>
+					<y>2640498</y>
+				</point>
+				<point>
+					<x>16125448</x>
+					<y>2640498</y>
+				</point>
+				<point>
+					<x>16125448</x>
+					<y>2607756</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="51">
+		<title>HSIL</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>24.032684</lens>
+		<x>16218158</x>
+		<y>450559</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>15979393</x>
+					<y>493787</y>
+				</point>
+				<point>
+					<x>15979393</x>
+					<y>536095</y>
+				</point>
+				<point>
+					<x>16008825</x>
+					<y>536095</y>
+				</point>
+				<point>
+					<x>16008825</x>
+					<y>493787</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="52">
+		<title>ASCH</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>24.032684</lens>
+		<x>16218158</x>
+		<y>-1649968</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>16292473</x>
+					<y>-1671122</y>
+				</point>
+				<point>
+					<x>16292473</x>
+					<y>-1651623</y>
+				</point>
+				<point>
+					<x>16307557</x>
+					<y>-1651623</y>
+				</point>
+				<point>
+					<x>16307557</x>
+					<y>-1671122</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="53">
+		<title>LSIL</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>24.032684</lens>
+		<x>15530286</x>
+		<y>-1905</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>15368412</x>
+					<y>61924</y>
+				</point>
+				<point>
+					<x>15368412</x>
+					<y>107543</y>
+				</point>
+				<point>
+					<x>15414031</x>
+					<y>107543</y>
+				</point>
+				<point>
+					<x>15414031</x>
+					<y>61924</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="54">
+		<title>ASCH</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>24.032684</lens>
+		<x>15530286</x>
+		<y>1679312</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>15408144</x>
+					<y>1784347</y>
+				</point>
+				<point>
+					<x>15408144</x>
+					<y>1813043</y>
+				</point>
+				<point>
+					<x>15430218</x>
+					<y>1813043</y>
+				</point>
+				<point>
+					<x>15430218</x>
+					<y>1784347</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="55">
+		<title>ASCUS</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>24.032684</lens>
+		<x>14794449</x>
+		<y>3489396</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>14818730</x>
+					<y>3631588</y>
+				</point>
+				<point>
+					<x>14818730</x>
+					<y>3666538</y>
+				</point>
+				<point>
+					<x>14854416</x>
+					<y>3666539</y>
+				</point>
+				<point>
+					<x>14854416</x>
+					<y>3631588</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="56">
+		<title>HSIL</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>24.032684</lens>
+		<x>14794449</x>
+		<y>12903</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>14612340</x>
+					<y>-54605</y>
+				</point>
+				<point>
+					<x>14612340</x>
+					<y>-31795</y>
+				</point>
+				<point>
+					<x>14642140</x>
+					<y>-31795</y>
+				</point>
+				<point>
+					<x>14642140</x>
+					<y>-54605</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="57">
+		<title>LSIL</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>23.940628</lens>
+		<x>14118514</x>
+		<y>-4648134</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>14218966</x>
+					<y>-4780900</y>
+				</point>
+				<point>
+					<x>14218966</x>
+					<y>-4748772</y>
+				</point>
+				<point>
+					<x>14241864</x>
+					<y>-4748771</y>
+				</point>
+				<point>
+					<x>14241864</x>
+					<y>-4780900</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="58">
+		<title>ASCH</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>23.940628</lens>
+		<x>14118514</x>
+		<y>-991937</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>14290982</x>
+					<y>-1057120</y>
+				</point>
+				<point>
+					<x>14290982</x>
+					<y>-1041978</y>
+				</point>
+				<point>
+					<x>14316464</x>
+					<y>-1041978</y>
+				</point>
+				<point>
+					<x>14316464</x>
+					<y>-1057120</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="59">
+		<title>ASCUS</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>23.940628</lens>
+		<x>14118514</x>
+		<y>1836913</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>13961926</x>
+					<y>1921669</y>
+				</point>
+				<point>
+					<x>13961926</x>
+					<y>1954538</y>
+				</point>
+				<point>
+					<x>14002550</x>
+					<y>1954538</y>
+				</point>
+				<point>
+					<x>14002550</x>
+					<y>1921669</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="60">
+		<title>ASCUS</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>23.940628</lens>
+		<x>13379803</x>
+		<y>2125147</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>13363184</x>
+					<y>2129393</y>
+				</point>
+				<point>
+					<x>13363184</x>
+					<y>2177035</y>
+				</point>
+				<point>
+					<x>13399007</x>
+					<y>2177035</y>
+				</point>
+				<point>
+					<x>13399007</x>
+					<y>2129393</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="61">
+		<title>HSIL</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>23.940628</lens>
+		<x>13379803</x>
+		<y>1334713</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>13133102</x>
+					<y>1281717</y>
+				</point>
+				<point>
+					<x>13133102</x>
+					<y>1310523</y>
+				</point>
+				<point>
+					<x>13153785</x>
+					<y>1310523</y>
+				</point>
+				<point>
+					<x>13153785</x>
+					<y>1281717</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="62">
+		<title>LSIL</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>23.940628</lens>
+		<x>13379803</x>
+		<y>-1446171</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#0000ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>13312219</x>
+					<y>-1499536</y>
+				</point>
+				<point>
+					<x>13312219</x>
+					<y>-1433429</y>
+				</point>
+				<point>
+					<x>13342872</x>
+					<y>-1433429</y>
+				</point>
+				<point>
+					<x>13342872</x>
+					<y>-1499536</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+		<fp-tp>none</fp-tp>
+	<cat /></ndpviewstate>
+	<ndpviewstate id="63">
+		<title>Superficial cell</title>
+		<details />
+		<coordformat>nanometers</coordformat>
+		<lens>40.000000</lens>
+		<x>16904482</x>
+		<y>-958118</y>
+		<z>0</z>
+		<showtitle>1</showtitle>
+		<showhistogram>0</showhistogram>
+		<showlineprofile>0</showlineprofile>
+		<annotation type="freehand" displayname="AnnotateRectangle" color="#ff00ff">
+			<measuretype>3</measuretype>
+			<closed>1</closed>
+			<pointlist>
+				<point>
+					<x>16869778</x>
+					<y>-990058</y>
+				</point>
+				<point>
+					<x>16869778</x>
+					<y>-927283</y>
+				</point>
+				<point>
+					<x>16947806</x>
+					<y>-927283</y>
+				</point>
+				<point>
+					<x>16947806</x>
+					<y>-990058</y>
+				</point>
+			</pointlist>
+			<specialtype>rectangle</specialtype>
+			<specialtype>rectangle</specialtype>
+		</annotation>
+	<cat /></ndpviewstate>
+</annotations>

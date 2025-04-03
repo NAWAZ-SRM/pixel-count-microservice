@@ -460,3 +460,17 @@ const DeepZoomViewer = forwardRef(({
 });
 
 export default DeepZoomViewer;
+
+
+
+
+
+
+
+
+
+
+
+
+
+

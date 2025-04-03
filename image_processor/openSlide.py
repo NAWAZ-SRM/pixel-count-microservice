@@ -421,8 +421,8 @@ def get_image(Doctor, tileSlide, annotNo, DateFolder=None):
     cx = int((x1 + x2) / 2)
     cy = int((y1 + y2) / 2)
 
-    left = int(cx - 256)
-    top = int(cy - 256)
+    left = int(cx -256)
+    top = int(cy -256)
 
     tile = slide.read_region((left, top), 0, (512, 512))
     tile = tile.convert('RGB')
