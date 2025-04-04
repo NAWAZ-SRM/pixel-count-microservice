@@ -400,7 +400,7 @@ const FileViewer = ({ doctorData, onDoctorSelect }) => {
   //   setError(null);
   //   try {
   //     const response = await fetch(
-  //       `http://127.0.0.1:8000/listDoctorFolders/${selectedDoctor}`,
+  //       `http://34.28.249.83:8000/listDoctorFolders/${selectedDoctor}`,
   //       {
   //         headers: {
   //           Authorization: `Token ${localStorage.getItem("token")}`,

@@ -31,7 +31,7 @@
 
 //   useEffect(() => {
 //     const fetchData = async (pathT) => {
-//       const path = `http://127.0.0.1:8000/api/${pathT}`;
+//       const path = `http://34.28.249.83:8000/api/${pathT}`;
 //       const token = localStorage.getItem('token');
 //       console.log('Fetching data with token:', token);
 //       return new Promise((resolve, reject) => {
@@ -194,7 +194,7 @@
 
 //   useEffect(() => {
 //     const fetchData = async (pathT) => {
-//       const path = `http://127.0.0.1:8000/api/${pathT}`;
+//       const path = `http://34.28.249.83:8000/api/${pathT}`;
 //       const token = localStorage.getItem('token');
 //       return new Promise((resolve, reject) => {
 //         fetch(path, {
@@ -339,7 +339,7 @@ function App() {
 
   useEffect(() => {
     const fetchData = async (pathT) => {
-      const path = `http://127.0.0.1:8000/api/${pathT}`;
+      const path = `http://34.28.249.83:8000/api/${pathT}`;
       const token = localStorage.getItem('token');
       return new Promise((resolve, reject) => {
         fetch(path, {

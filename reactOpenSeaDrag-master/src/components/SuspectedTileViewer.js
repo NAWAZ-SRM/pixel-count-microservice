@@ -96,7 +96,7 @@
 
 //       let imagesArr = annotDet.Predicts.map(x => ({
 //         id: x.id,
-//         src: `http://127.0.0.1:8000/api/get_image/${Doctor}/${tileName}/${x.id}`,
+//         src: `http://34.28.249.83:8000/api/get_image/${Doctor}/${tileName}/${x.id}`,
 //         alt: x.title,
 //         zoom: 64,
 //         x: x.openSeaXCoord,
@@ -594,7 +594,7 @@
 
 //       let imagesArr = annotDet.Predicts.map(x => ({
 //         id: x.id,
-//         src: `http://127.0.0.1:8000/api/get_image/${Doctor}/${tileName}/${x.id}`,
+//         src: `http://34.28.249.83:8000/api/get_image/${Doctor}/${tileName}/${x.id}`,
 //         alt: x.title,
 //         zoom: 64,
 //         x: x.left, // Use left (pixel coordinate) instead of openSeaXCoord
@@ -1093,7 +1093,7 @@ const SuspectedTileViewer = () => {
 
       let imagesArr = annotDet.Predicts.map(x => ({
         id: x.id,
-        src: `http://127.0.0.1:8000/api/get_image/${Doctor}/${tileName}/${x.id}`,
+        src: `http://34.28.249.83:8000/api/get_image/${Doctor}/${tileName}/${x.id}`,
         alt: x.title,
         zoom: 64,
         x: x.left,

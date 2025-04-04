@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-$klw1x-9j)p3%i(e3c*#b75irv2$khi1&pm#i@i7so+&(nczp!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
+ALLOWED_HOSTS = ["localhost", "34.28.249.83"]
 
 # CORS settings for React frontend
 INSTALLED_APPS = [
@@ -71,7 +71,7 @@ REST_FRAMEWORK = {
 # Allow React to interact with Django
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:8000",
-    "http://127.0.0.1:8000",
+    "http://34.28.249.83:8000",
     # If React is served from Django
 ]
 

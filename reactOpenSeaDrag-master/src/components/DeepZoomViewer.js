@@ -108,7 +108,7 @@
 //         "Overlap": 0, 
 //         "Size": { "Height": heightTile, "Width": widthTile }, 
 //         "TileSize": 512, 
-//         "Url": `http://127.0.0.1:8000/api/tile/${Doctor}/${tileName}/`, 
+//         "Url": `http://34.28.249.83:8000/api/tile/${Doctor}/${tileName}/`, 
 //         "xmlns": "http://schemas.microsoft.com/deepzoom/2008" 
 //       }, 
 //       "crossOriginPolicy": 'Anonymous', 
@@ -380,7 +380,7 @@ const DeepZoomViewer = forwardRef(({
         "Overlap": 0,
         "Size": { "Height": heightTile, "Width": widthTile },
         "TileSize": 512,
-        "Url": `http://127.0.0.1:8000/api/tile/${Doctor}/${tileName}/`,
+        "Url": `http://34.28.249.83:8000/api/tile/${Doctor}/${tileName}/`,
         "xmlns": "http://schemas.microsoft.com/deepzoom/2008"
       },
       "crossOriginPolicy": 'Anonymous',

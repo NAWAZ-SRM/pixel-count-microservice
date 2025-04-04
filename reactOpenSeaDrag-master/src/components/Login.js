@@ -12,7 +12,7 @@ const Login = ({ setIsAuthenticated }) => {
     e.preventDefault();
     try {
       console.log('Attempting login with:', { username, password });
-      const response = await fetch('http://127.0.0.1:8000/api/login/', {
+      const response = await fetch('http://34.28.249.83:8000/api/login/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password }),
